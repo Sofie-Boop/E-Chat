@@ -1,0 +1,71 @@
+/*----Variabler----*/
+$primary-color: #AA64D8;
+$secondary-color: #F7A3DF; 
+$tertiary-color: #6EBDFF;
+$fourth-color: #BCB0D4;
+$fifth-color: #FFFFFF;
+$primary-gradient: linear-gradient($primary-color, $secondary-color, $tertiary-color);
+$error-bg: linear-gradient(#FBB394, #5A3572);
+$error-color: #E51518;
+$loading-bg: linear-gradient(#AA64D8, #5A3572);
+$border-radius: 20px;
+
+/*----Mixins----*/ 
+/*@mixin navn(){}*/
+//Parentesen kan indeholde lokale og globale variabler, som gør enkelte elementer i mixin redigerbare. ($bg-color: $bt-color, text-color)
+//Ved kald brug @include
+
+@mixin standardbg {
+    background: $primary-gradient;
+    border-radius: $border-radius  $border-radius $border-radius  $border-radius;
+    width: 100svw; /* 100% indtil max-width nås */
+    max-width: 280px;
+    min-height: 80svh;
+    padding: 20px;
+}
+
+@mixin hidden {
+    visibility: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px; 
+}
+
+@mixin gradient-colour {
+    background: -webkit-linear-gradient(#AA64D8, #F7A3DF,#6EBDFF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin standardbtn {
+    font-family: "Coiny", system-ui;
+    position: relative;
+    background-color: $primary-color;
+    color: white; 
+    font-size: 20px;
+    padding: 16px 80px;
+    margin-left: 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-align: center;
+}
+
+@mixin badbtn {
+    font-family: "Coiny", system-ui;
+    position: relative;
+    background-color: $primary-color;
+    color: black; 
+    font-size: 20px;
+    padding: 16px 80px;
+    margin-left: 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-align: center;
+}

@@ -1,0 +1,214 @@
+@use 'partial'; //Henter parial.scss som modul og gør det muligt at kalde på elementerne i filen
+
+/*--------General Styling---------*/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Coiny", system-ui;
+    color: partial.$fifth-color;
+    font-weight: 300;
+    padding: 1em;
+    text-align: center;
+}
+  
+h1 {
+    font-size: 2em;
+}
+  
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+  
+img {
+    max-width: 100%;
+}
+  
+p, a {
+    font-size: 1.2em;
+}
+  
+p {
+    padding: 0 2em 1.5em 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*----------------------------------------*/
+
+/*-------------Mobil Styling--------------*/
+/*--------Login-box---------*/
+.login-page {
+    display: none;
+}
+
+.login-container {
+    @include partial.standardbg
+}
+
+.welcome-window {
+    aspect-ratio: 1/1;
+    background-image: url(../img/forsidebillede.png);
+    color: partial.$primary-gradient;
+    height: 200px;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: grid;
+    place-content: start;
+    width: 100%;
+}
+
+.heading1 {
+    @include partial.gradient-colour;
+    margin-top: -25px;
+}
+
+.heading2 {
+    @include partial.gradient-colour;
+    margin-top: -50px;
+}
+
+/*--------Username Felt---------*/
+form {
+    margin-top: 1.5em;
+}
+
+label {
+    font-family: "Coiny", system-ui;
+    color: partial.$fifth-color;
+    font-size: 1.4em
+    
+}
+
+input[type=text] {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1.2em;
+    color: partial.$fifth-color;
+    background-color: partial.$primary-color;
+    width: 100%;
+    padding-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: partial.$border-radius partial.$border-radius  partial.$border-radius partial.$border-radius;
+}
+
+input[type=text]:focus {
+    background-color: partial.$tertiary-color;
+}
+
+::placeholder {
+   color: partial.$fifth-color;
+}
+
+/*--------Profil & Background Images--------*/
+.heading3, .heading4 {
+    text-align: left;
+}
+
+.row1, .row2, .row3, .row4 {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    margin-top: 5px;
+}
+
+.profil1, .profil2, .profil3, .profil4, .profil5, .profil6, .background1, .background2, .background3, .background4, .background5, .background6 {
+    max-width: 30%;
+}
+
+/*--------Login Button--------*/
+.loginbtn {
+  @include partial.standardbtn;
+}
+
+.loginbtn:hover {
+    background-color: partial.$fourth-color;
+    color: white;
+}
+
+/*--------Ending 1--------*/
+
+.ending1 {
+    
+}
+
+.ending1-container {
+    background: partial.$error-bg;
+    border-radius: partial.$border-radius  partial.$border-radius  partial.$border-radius  partial.$border-radius;
+    width: 100svw; /* 100% indtil max-width nås */
+    max-width: 280px;
+    min-height: 80svh;
+    padding: 20px;
+
+    h1, h2{
+        color: black;
+    }
+
+    h1 {
+        float: right;
+    }
+
+    img {
+        float: left;
+    }
+}
+
+
+.advice1 {
+    text-align: center;
+}
+
+/*--------Ending 1 btn--------*/
+.warningbtn {
+    @include partial.badbtn;
+}
+
+/*--------Desktop ikoner--------*/
+@media screen and (max-width: 968px) {
+    .desktop-ikoner{
+        @include partial.hidden;
+    }
+  }
+
+/*--------Footer---------*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    position: absolute;
+    bottom: 0;
+   
+    img{
+        max-width: 70%;
+    }
+}
+/*----------------------------------------*/
+
+
+ /*-------------Desktop Styling--------------*/
+  @media screen and (min-width: 968px) {
+
+    .desktop-ikoner {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+    }
+
+    /*--------Desktop Footer---------*/
+    .mobilfooter {
+        @include partial.hidden;
+    }
+  }
