@@ -142,11 +142,16 @@ input[type=text]:focus {
 /*--------Ending 1--------*/
 
 .ending1 {
-    
+    display: none
 }
 
 .ending1-container {
     @include partial.badbg;
+
+    img {
+        margin-top: -120px;
+        float: left;
+    }
 }
 
 .advice1 {
@@ -157,6 +162,32 @@ input[type=text]:focus {
 .warningbtn {
     @include partial.badbtn;
 }
+
+/*--------Ending 2--------*/
+
+.ending2 {
+    display: none
+}
+
+.ending2-container {
+    @include partial.badbg;
+
+    h1 {
+        margin-top: -20px;
+    }
+
+    min-height: 77svh;
+}
+
+.advice2 {
+    text-align: center;
+}
+
+/*--------Ending 2 btn--------*/
+.errorbtn {
+    @include partial.badbtn;
+}
+
 
 /*--------Desktop ikoner--------*/
 @media screen and (max-width: 968px) {

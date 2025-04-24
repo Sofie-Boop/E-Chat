@@ -167,6 +167,10 @@ input[type=text]:focus {
 }
 
 /*--------Ending 1--------*/
+.ending1 {
+  display: none;
+}
+
 .ending1-container {
   background: linear-gradient(#FBB394, #5A3572);
   border-radius: 20px 20px 20px 20px;
@@ -187,8 +191,8 @@ input[type=text]:focus {
   margin-bottom: -5px;
 }
 .ending1-container img {
-  float: left;
   margin-top: -120px;
+  float: left;
 }
 
 .advice1 {
@@ -197,6 +201,54 @@ input[type=text]:focus {
 
 /*--------Ending 1 btn--------*/
 .warningbtn {
+  font-family: "Coiny", system-ui;
+  position: relative;
+  background-color: #AA64D8;
+  color: black;
+  font-size: 20px;
+  padding: 16px 80px;
+  margin-left: 35px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  text-align: center;
+}
+
+/*--------Ending 2--------*/
+.ending2 {
+  display: none;
+}
+
+.ending2-container {
+  background: linear-gradient(#FBB394, #5A3572);
+  border-radius: 20px 20px 20px 20px;
+  margin: auto;
+  width: 100svw; /* 100% indtil max-width nås */
+  max-width: 260px;
+  min-height: 70svh;
+  padding: 20px;
+  min-height: 77svh;
+}
+.ending2-container h1, .ending2-container h2 {
+  color: black;
+}
+.ending2-container h1 {
+  float: right;
+  margin-top: -50px;
+}
+.ending2-container h2 {
+  margin-bottom: -5px;
+}
+.ending2-container h1 {
+  margin-top: -20px;
+}
+
+.advice2 {
+  text-align: center;
+}
+
+/*--------Ending 2 btn--------*/
+.errorbtn {
   font-family: "Coiny", system-ui;
   position: relative;
   background-color: #AA64D8;
