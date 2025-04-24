@@ -18,9 +18,21 @@ $border-radius: 20px;
 @mixin standardbg {
     background: $primary-gradient;
     border-radius: $border-radius  $border-radius $border-radius  $border-radius;
+    margin: auto;
+    margin-top: 30px;
     width: 100svw; /* 100% indtil max-width nås */
     max-width: 280px;
     min-height: 80svh;
+    padding: 20px;
+}
+
+@mixin badbg {
+    background: $error-bg;
+    border-radius: $border-radius  $border-radius  $border-radius  $border-radius;
+    margin: auto;
+    width: 100svw; /* 100% indtil max-width nås */
+    max-width: 260px;
+    min-height: 70svh;
     padding: 20px;
 }
 

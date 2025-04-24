@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 
 h3 {
@@ -56,6 +56,8 @@ a {
 .login-container {
   background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
   border-radius: 20px 20px 20px 20px;
+  margin: auto;
+  margin-top: 30px;
   width: 100svw; /* 100% indtil max-width nås */
   max-width: 280px;
   min-height: 80svh;
@@ -168,9 +170,10 @@ input[type=text]:focus {
 .ending1-container {
   background: linear-gradient(#FBB394, #5A3572);
   border-radius: 20px 20px 20px 20px;
+  margin: auto;
   width: 100svw; /* 100% indtil max-width nås */
-  max-width: 280px;
-  min-height: 80svh;
+  max-width: 260px;
+  min-height: 70svh;
   padding: 20px;
 }
 .ending1-container h1, .ending1-container h2 {
@@ -178,9 +181,14 @@ input[type=text]:focus {
 }
 .ending1-container h1 {
   float: right;
+  margin-top: -50px;
+}
+.ending1-container h2 {
+  margin-bottom: -5px;
 }
 .ending1-container img {
   float: left;
+  margin-top: -120px;
 }
 
 .advice1 {
@@ -221,11 +229,9 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 1em;
-  position: absolute;
-  bottom: 0;
 }
 footer img {
-  max-width: 70%;
+  max-width: 50%;
 }
 
 /*----------------------------------------*/

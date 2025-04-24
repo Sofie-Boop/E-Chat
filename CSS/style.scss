@@ -21,7 +21,7 @@ h1 {
 }
   
 h2 {
-    font-size: 1.8em;
+    font-size: 1.6em;
 }
 
 h3 {
@@ -146,12 +146,7 @@ input[type=text]:focus {
 }
 
 .ending1-container {
-    background: partial.$error-bg;
-    border-radius: partial.$border-radius  partial.$border-radius  partial.$border-radius  partial.$border-radius;
-    width: 100svw; /* 100% indtil max-width nås */
-    max-width: 280px;
-    min-height: 80svh;
-    padding: 20px;
+    @include partial.badbg;
 
     h1, h2{
         color: black;
@@ -159,10 +154,16 @@ input[type=text]:focus {
 
     h1 {
         float: right;
+        margin-top: -50px;
+    }
+
+    h2 {
+        margin-bottom: -5px;
     }
 
     img {
         float: left;
+        margin-top: -120px;
     }
 }
 
@@ -188,11 +189,9 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    position: absolute;
-    bottom: 0;
    
     img{
-        max-width: 55%;
+        max-width: 50%;
     }
 }
 /*----------------------------------------*/
