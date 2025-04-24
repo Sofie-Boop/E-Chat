@@ -188,6 +188,38 @@ input[type=text]:focus {
     @include partial.badbtn;
 }
 
+/*--------Ending 3--------*/
+
+.ending3 {
+   
+}
+
+.ending3-container {
+    @include partial.standardbg;
+    min-height: 106svh;
+    h1 {
+        margin-top: -20px;
+    }
+
+    h2 {
+        margin-top: -30px;
+    }
+
+    p {
+        color: white;
+    }
+}
+
+.advice3 {
+    text-align: center;
+}
+
+/*--------Ending 3 btn--------*/
+.logoff1btn {
+    @include partial.standardbtn;
+    margin-left: 26px;
+}
+
 
 /*--------Desktop ikoner--------*/
 @media screen and (max-width: 968px) {

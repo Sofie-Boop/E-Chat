@@ -262,6 +262,48 @@ input[type=text]:focus {
   text-align: center;
 }
 
+/*--------Ending 3--------*/
+.ending3-container {
+  background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
+  border-radius: 20px 20px 20px 20px;
+  margin: auto;
+  margin-top: 30px;
+  width: 100svw; /* 100% indtil max-width nås */
+  max-width: 280px;
+  min-height: 80svh;
+  padding: 20px;
+  min-height: 106svh;
+}
+.ending3-container h1 {
+  margin-top: -20px;
+}
+.ending3-container h2 {
+  margin-top: -30px;
+}
+.ending3-container p {
+  color: white;
+}
+
+.advice3 {
+  text-align: center;
+}
+
+/*--------Ending 3 btn--------*/
+.logoff1btn {
+  font-family: "Coiny", system-ui;
+  position: relative;
+  background-color: #AA64D8;
+  color: white;
+  font-size: 20px;
+  padding: 16px 80px;
+  margin-left: 35px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  text-align: center;
+  margin-left: 26px;
+}
+
 /*--------Desktop ikoner--------*/
 @media screen and (max-width: 968px) {
   .desktop-ikoner {
