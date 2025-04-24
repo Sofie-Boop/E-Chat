@@ -308,6 +308,10 @@ input[type=text]:focus {
 }
 
 /*--------Ending 4--------*/
+.ending4 {
+  display: none;
+}
+
 .ending4-container {
   background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
   color: white;
