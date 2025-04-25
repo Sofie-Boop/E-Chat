@@ -15,6 +15,12 @@ $border-radius: 20px;
 //Parentesen kan indeholde lokale og globale variabler, som gør enkelte elementer i mixin redigerbare. ($bg-color: $bt-color, text-color)
 //Ved kald brug @include
 
+@mixin iconplacement {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
 @mixin standardbg {
     background: $primary-gradient;
     color: white;
@@ -31,6 +37,7 @@ $border-radius: 20px;
     background: $error-bg;
     border-radius: $border-radius  $border-radius  $border-radius  $border-radius;
     margin: auto;
+    margin-top: 30px;
     width: 100svw; /* 100% indtil max-width nås */
     max-width: 260px;
     min-height: 70svh;

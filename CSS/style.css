@@ -176,6 +176,7 @@ input[type=text]:focus {
   background: linear-gradient(#FBB394, #5A3572);
   border-radius: 20px 20px 20px 20px;
   margin: auto;
+  margin-top: 30px;
   width: 100svw; /* 100% indtil max-width nås */
   max-width: 260px;
   min-height: 70svh;
@@ -224,6 +225,7 @@ input[type=text]:focus {
   background: linear-gradient(#FBB394, #5A3572);
   border-radius: 20px 20px 20px 20px;
   margin: auto;
+  margin-top: 30px;
   width: 100svw; /* 100% indtil max-width nås */
   max-width: 260px;
   min-height: 70svh;
@@ -351,9 +353,19 @@ input[type=text]:focus {
   margin-left: 26px;
 }
 
-/*--------Desktop ikoner--------*/
+/*--------Mobil Footer---------*/
+.mobilfooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+.mobilfooter img {
+  max-width: 50%;
+}
+
+/*--------Desktop Footer--------*/
 @media screen and (max-width: 968px) {
-  .desktop-ikoner {
+  .desktopfooter {
     visibility: hidden;
     clip: rect(0 0 0 0);
     -webkit-clip-path: inset(50%);
@@ -365,25 +377,10 @@ input[type=text]:focus {
     width: 1px;
   }
 }
-/*--------Footer---------*/
-footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 1em;
-}
-footer img {
-  max-width: 50%;
-}
-
 /*----------------------------------------*/
 /*-------------Desktop Styling--------------*/
 @media screen and (min-width: 968px) {
-  .desktop-ikoner {
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
-  }
-  /*--------Desktop Footer---------*/
+  /*--------Mobil Footer---------*/
   .mobilfooter {
     visibility: hidden;
     clip: rect(0 0 0 0);
@@ -394,5 +391,10 @@ footer img {
     position: absolute;
     white-space: nowrap;
     width: 1px;
+  }
+  .desktopfooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
   }
 }/*# sourceMappingURL=style.css.map */

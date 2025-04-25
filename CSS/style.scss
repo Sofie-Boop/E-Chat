@@ -248,38 +248,33 @@ input[type=text]:focus {
      margin-left: 26px;
  }
 
-
-/*--------Desktop ikoner--------*/
-@media screen and (max-width: 968px) {
-    .desktop-ikoner{
-        @include partial.hidden;
-    }
-  }
-
-/*--------Footer---------*/
-footer{
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
+/*--------Mobil Footer---------*/
+.mobilfooter{
+    @include partial.iconplacement;
    
     img{
         max-width: 50%;
     }
 }
+
+/*--------Desktop Footer--------*/
+@media screen and (max-width: 968px) {
+    .desktopfooter{
+        @include partial.hidden;
+    }
+}
+
 /*----------------------------------------*/
 
 
- /*-------------Desktop Styling--------------*/
-  @media screen and (min-width: 968px) {
+/*-------------Desktop Styling--------------*/
+@media screen and (min-width: 968px) {
 
-    .desktop-ikoner {
-        display: flex;
-        justify-content: space-between;
-        padding: 1em;
-    }
-
-    /*--------Desktop Footer---------*/
+    /*--------Mobil Footer---------*/
     .mobilfooter {
         @include partial.hidden;
     }
-  }
+    .desktopfooter {
+    @include partial.iconplacement;
+    }
+}
