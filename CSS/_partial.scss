@@ -19,6 +19,8 @@ $border-radius: 20px;
     display: flex;
     justify-content: space-between;
     padding: 1em;
+    align-items: center;
+    text-align: center;
 }
 
 @mixin standardbg {

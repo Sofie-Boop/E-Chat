@@ -358,6 +358,8 @@ input[type=text]:focus {
   display: flex;
   justify-content: space-between;
   padding: 1em;
+  align-items: center;
+  text-align: center;
 }
 .mobilfooter img {
   max-width: 50%;
@@ -396,5 +398,7 @@ input[type=text]:focus {
     display: flex;
     justify-content: space-between;
     padding: 1em;
+    align-items: center;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
