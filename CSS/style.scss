@@ -17,15 +17,15 @@ h1, h2, h3, h4, h5, h6 {
 }
   
 h1 {
-    font-size: 2em;
+    font-size: 24px;
 }
   
 h2 {
-    font-size: 1.6em;
+    font-size: 20px;
 }
 
 h3 {
-    font-size: 1.4em;
+    font-size: 16px;
 }
   
 img {
@@ -33,7 +33,7 @@ img {
 }
   
 p, a {
-    font-size: 1.2em;
+    font-size: 12px;
 }
   
 p {
@@ -137,6 +137,35 @@ input[type=text]:focus {
 .loginbtn:hover {
     background-color: partial.$fourth-color;
     color: white;
+}
+
+/*--------Chatbox--------*/
+.chatbox {
+
+}
+
+.chat-container {
+    @include partial.standardbg;
+
+    img {
+        max-width: 30%;
+    }
+}
+
+.message-container1, .message-container2 {
+   @include partial.messagecontainer;
+}
+
+/*--------Answer Buttons--------*/
+.answer-container {
+    background-color: partial.$fifth-color;
+    border-radius: partial.$border-radius  partial.$border-radius partial.$border-radius partial.$border-radius;
+    padding-bottom: 50px
+}
+
+.answer1btn, .answer2btn, .answer3btn {
+    @include partial.standardbtn;
+    font-size: 16px;
 }
 
 /*--------Ending 1--------*/

@@ -35,6 +35,14 @@ $border-radius: 20px;
     padding: 20px;
 }
 
+@mixin messagecontainer {
+    background-color: $fifth-color;
+    color: black;
+    border-radius: $border-radius  $border-radius $border-radius $border-radius;
+    text-align: center;
+    padding-top: 5px;
+}
+
 @mixin badbg {
     background: $error-bg;
     border-radius: $border-radius  $border-radius  $border-radius  $border-radius;
