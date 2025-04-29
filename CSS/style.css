@@ -49,10 +49,6 @@ a {
 /*----------------------------------------*/
 /*-------------Mobil Styling--------------*/
 /*--------Login-box---------*/
-.login-page {
-  display: none;
-}
-
 .login-container {
   background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
   color: white;
@@ -63,6 +59,7 @@ a {
   max-width: 280px;
   min-height: 80svh;
   padding: 20px;
+  padding-bottom: 50px;
 }
 
 .welcome-window {
@@ -93,7 +90,6 @@ a {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-top: -50px;
 }
 
 /*--------Username Felt---------*/
@@ -403,6 +399,11 @@ input[type=text]:focus {
   margin-left: 26px;
 }
 
+/*--------Infografi--------*/
+.infografi {
+  display: none;
+}
+
 /*--------Mobil Footer---------*/
 .mobilfooter {
   display: flex;
@@ -450,5 +451,8 @@ input[type=text]:focus {
     padding: 1em;
     align-items: center;
     text-align: center;
+  }
+  .desktopfooter img {
+    max-width: 60%;
   }
 }/*# sourceMappingURL=style.css.map */

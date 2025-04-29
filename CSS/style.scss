@@ -49,11 +49,12 @@ a {
 /*-------------Mobil Styling--------------*/
 /*--------Login-box---------*/
 .login-page {
-    display: none;
+    
 }
 
 .login-container {
-    @include partial.standardbg
+    @include partial.standardbg;
+    padding-bottom: 50px;
 }
 
 .welcome-window {
@@ -78,7 +79,6 @@ a {
 
 .heading2 {
     @include partial.gradient-colour;
-    margin-top: -50px;
 }
 
 /*--------Username Felt---------*/
@@ -277,6 +277,12 @@ input[type=text]:focus {
      margin-left: 26px;
  }
 
+/*--------Infografi--------*/
+.infografi {
+    display: none
+}
+
+
 /*--------Mobil Footer---------*/
 .mobilfooter{
     @include partial.iconplacement;
@@ -305,5 +311,10 @@ input[type=text]:focus {
     }
     .desktopfooter {
     @include partial.iconplacement;
+    
+        img {
+            max-width: 60%;
+        }    
+
     }
 }
