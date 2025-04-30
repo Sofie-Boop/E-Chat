@@ -59,6 +59,7 @@ a {
   max-width: 280px;
   min-height: 80svh;
   padding: 20px;
+  margin-bottom: 15px;
   padding-bottom: 50px;
 }
 
@@ -185,6 +186,7 @@ input[type=text]:focus {
   max-width: 280px;
   min-height: 80svh;
   padding: 20px;
+  margin-bottom: 15px;
 }
 .chat-container img {
   max-width: 30%;
@@ -243,6 +245,7 @@ input[type=text]:focus {
   max-width: 260px;
   min-height: 50svh;
   padding: 20px;
+  margin-bottom: 15px;
 }
 .ending1-container h1, .ending1-container h2 {
   color: black;
@@ -296,6 +299,7 @@ input[type=text]:focus {
   max-width: 260px;
   min-height: 50svh;
   padding: 20px;
+  margin-bottom: 15px;
   min-height: 52svh;
 }
 .ending2-container h1, .ending2-container h2 {
@@ -351,6 +355,7 @@ input[type=text]:focus {
   max-width: 280px;
   min-height: 80svh;
   padding: 20px;
+  margin-bottom: 15px;
   min-height: 66svh;
 }
 .ending3-container h1 {
@@ -400,6 +405,7 @@ input[type=text]:focus {
   max-width: 280px;
   min-height: 80svh;
   padding: 20px;
+  margin-bottom: 15px;
   min-height: 70svh;
 }
 .ending4-container h1 {
@@ -469,6 +475,56 @@ input[type=text]:focus {
 /*-------------Desktop Styling--------------*/
 @media screen and (min-width: 968px) {
   /*--------General Styling---------*/
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+  img {
+    max-width: 100%;
+  }
+  p, a {
+    font-size: 20px;
+  }
+  /*--------Login Box---------*/
+  .login-container {
+    background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
+    color: white;
+    border-radius: 20px 20px 20px 20px;
+    margin: auto;
+    margin-top: 30px;
+    width: 100svw; /* 100% indtil max-width nås */
+    max-width: 800px;
+    min-height: 280svh;
+    padding: 20px;
+    margin-bottom: 35px;
+  }
+  .welcome-window {
+    height: 400px;
+  }
+  .heading1 {
+    font-size: 36px;
+    margin-top: -8px;
+    margin-left: 150px;
+  }
+  .heading2 {
+    font-size: 34px;
+    margin-top: 125px;
+    margin-left: 150px;
+  }
+  /*--------Profil & Background Images--------*/
+  .picturebox {
+    margin-bottom: 50px;
+  }
+  /*--------Login Button---------*/
+  .loginbtn {
+    padding: 20px 120px;
+    margin-left: 245px;
+  }
   /*--------Baggrunds Styling---------*/
   .ending1-container {
     min-height: 60svh;

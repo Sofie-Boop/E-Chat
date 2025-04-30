@@ -33,14 +33,20 @@ $border-radius: 20px;
     max-width: 280px;
     min-height: 80svh;
     padding: 20px;
+    margin-bottom: 15px;
 }
 
-@mixin messagecontainer {
-    background-color: $fifth-color;
-    color: black;
-    border-radius: $border-radius  $border-radius $border-radius $border-radius;
-    text-align: center;
-    padding-top: 5px;
+@mixin desktopstandardbg {
+    background: $primary-gradient;
+    color: white;
+    border-radius: $border-radius  $border-radius $border-radius  $border-radius;
+    margin: auto;
+    margin-top: 30px;
+    width: 100svw; /* 100% indtil max-width nås */
+    max-width: 800px;
+    min-height: 280svh;
+    padding: 20px;
+    margin-bottom: 35px;
 }
 
 @mixin badbg {
@@ -52,6 +58,7 @@ $border-radius: 20px;
     max-width: 260px;
     min-height: 50svh;
     padding: 20px;
+    margin-bottom: 15px;
     h1, h2{
         color: black;
     }
@@ -64,6 +71,14 @@ $border-radius: 20px;
     h2 {
         margin-bottom: -5px;
     }
+}
+
+@mixin messagecontainer {
+    background-color: $fifth-color;
+    color: black;
+    border-radius: $border-radius  $border-radius $border-radius $border-radius;
+    text-align: center;
+    padding-top: 5px;
 }
 
 @mixin hidden {
