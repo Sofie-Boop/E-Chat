@@ -49,7 +49,7 @@ a {
 /*-------------Mobil Styling--------------*/
 /*--------Login-box---------*/
 .login-page {
-    display: none;
+    
 }
 
 .login-container {
@@ -149,7 +149,7 @@ input[type=text]:focus {
 
 /*--------Chatbox--------*/
 .chatbox {
-    
+    display: none;
 }
 
 .chat-container {
@@ -162,6 +162,10 @@ input[type=text]:focus {
 
 .message-container1, .message-container2 {
    @include partial.messagecontainer;
+}
+
+.chatmessage1, .chatmessage2 {
+    display: flex;
 }
 
 /*--------Answer Buttons--------*/
