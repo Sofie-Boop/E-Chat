@@ -49,6 +49,10 @@ a {
 /*----------------------------------------*/
 /*-------------Mobil Styling--------------*/
 /*--------Login-box---------*/
+.login-page {
+  display: none;
+}
+
 .login-container {
   background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
   color: white;
@@ -66,7 +70,7 @@ a {
   aspect-ratio: 1/1;
   background-image: url(../img/forsidebillede.png);
   color: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
-  height: 200px;
+  height: 210px;
   max-width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -92,6 +96,7 @@ a {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: -20px;
+  font-size: 24px;
 }
 
 /*--------Username Felt---------*/
@@ -130,6 +135,10 @@ input[type=text]:focus {
 }
 
 /*--------Profil & Background Images--------*/
+.picturebox {
+  margin-bottom: 30px;
+}
+
 .heading3, .heading4 {
   text-align: left;
 }
@@ -166,10 +175,6 @@ input[type=text]:focus {
 }
 
 /*--------Chatbox--------*/
-.chatbox {
-  display: none;
-}
-
 .chat-container {
   background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
   color: white;
@@ -213,6 +218,11 @@ input[type=text]:focus {
   border-radius: 30px;
   text-align: center;
   font-size: 16px;
+}
+
+.answer1btn, .answer2btn, .answer3btn:hover {
+  background-color: #BCB0D4;
+  color: white;
 }
 
 /*--------Ending 1--------*/
@@ -262,6 +272,10 @@ input[type=text]:focus {
   cursor: pointer;
   border-radius: 30px;
   text-align: center;
+}
+
+.warningbtn:hover {
+  background-color: #BCB0D4;
 }
 
 /*--------Ending 2--------*/
@@ -314,6 +328,10 @@ input[type=text]:focus {
   text-align: center;
 }
 
+.errorbtn:hover {
+  background-color: #BCB0D4;
+}
+
 /*--------Ending 3--------*/
 .ending3 {
   display: none;
@@ -356,6 +374,11 @@ input[type=text]:focus {
   border-radius: 30px;
   text-align: center;
   margin-left: 26px;
+}
+
+.logoff1btn:hover {
+  background-color: #BCB0D4;
+  color: white;
 }
 
 /*--------Ending 4--------*/
@@ -402,6 +425,11 @@ input[type=text]:focus {
   margin-left: 26px;
 }
 
+.logoff2btn:hover {
+  background-color: #BCB0D4;
+  color: white;
+}
+
 /*--------Infografi--------*/
 .infografi {
   display: none;
@@ -436,6 +464,7 @@ input[type=text]:focus {
 /*----------------------------------------*/
 /*-------------Desktop Styling--------------*/
 @media screen and (min-width: 968px) {
+  /*--------General Styling---------*/
   /*--------Baggrunds Styling---------*/
   .ending1-container {
     min-height: 60svh;

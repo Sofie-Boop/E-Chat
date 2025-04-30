@@ -49,7 +49,7 @@ a {
 /*-------------Mobil Styling--------------*/
 /*--------Login-box---------*/
 .login-page {
-    
+    display: none;
 }
 
 .login-container {
@@ -61,7 +61,7 @@ a {
     aspect-ratio: 1/1;
     background-image: url(../img/forsidebillede.png);
     color: partial.$primary-gradient;
-    height: 200px;
+    height: 210px;
     max-width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -81,6 +81,7 @@ a {
 .heading2 {
     @include partial.gradient-colour;
     margin-top: -20px;
+    font-size: 24px;
 }
 
 /*--------Username Felt---------*/
@@ -116,6 +117,11 @@ input[type=text]:focus {
 }
 
 /*--------Profil & Background Images--------*/
+
+.picturebox {
+    margin-bottom: 30px;
+}
+
 .heading3, .heading4 {
     text-align: left;
 }
@@ -143,7 +149,7 @@ input[type=text]:focus {
 
 /*--------Chatbox--------*/
 .chatbox {
-    display: none;
+    
 }
 
 .chat-container {
@@ -170,6 +176,11 @@ input[type=text]:focus {
     font-size: 16px;
 }
 
+.answer1btn, .answer2btn, .answer3btn:hover {
+    background-color: partial.$fourth-color;
+    color: white;
+}
+
 /*--------Ending 1--------*/
 
 .ending1 {
@@ -192,6 +203,9 @@ input[type=text]:focus {
 /*--------Ending 1 btn--------*/
 .warningbtn {
     @include partial.badbtn;
+}
+.warningbtn:hover {
+    background-color: partial.$fourth-color;
 }
 
 /*--------Ending 2--------*/
@@ -217,6 +231,10 @@ input[type=text]:focus {
 /*--------Ending 2 btn--------*/
 .errorbtn {
     @include partial.badbtn;
+}
+
+.errorbtn:hover {
+    background-color: partial.$fourth-color;
 }
 
 /*--------Ending 3--------*/
@@ -250,6 +268,11 @@ input[type=text]:focus {
     margin-left: 26px;
 }
 
+.logoff1btn:hover {
+    background-color: partial.$fourth-color;
+    color: white;
+}
+
 /*--------Ending 4--------*/
 .ending4 {
     display: none;
@@ -279,6 +302,10 @@ input[type=text]:focus {
      margin-left: 26px;
  }
 
+.logoff2btn:hover {
+    background-color: partial.$fourth-color;
+    color: white;
+} 
 /*--------Infografi--------*/
 .infografi {
     display: none
@@ -306,6 +333,9 @@ input[type=text]:focus {
 
 /*-------------Desktop Styling--------------*/
 @media screen and (min-width: 968px) {
+
+    /*--------General Styling---------*/
+
     
     /*--------Baggrunds Styling---------*/
     .ending1-container {
