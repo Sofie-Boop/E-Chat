@@ -49,10 +49,6 @@ a {
 /*----------------------------------------*/
 /*-------------Mobil Styling--------------*/
 /*--------Login-box---------*/
-.login-page {
-  display: none;
-}
-
 .login-container {
   background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
   color: white;
@@ -87,6 +83,7 @@ a {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: -25px;
+  font-size: 30px;
 }
 
 .heading2 {
@@ -94,6 +91,7 @@ a {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-top: -20px;
 }
 
 /*--------Username Felt---------*/
@@ -143,7 +141,7 @@ input[type=text]:focus {
   margin-top: 5px;
 }
 
-.profil1, .profil2, .profil3, .profil4, .profil5, .profil6, .background1, .background2, .background3, .background4, .background5, .background6 {
+.avatar, .background1, .background2, .background3, .background4, .background5, .background6 {
   max-width: 30%;
 }
 
