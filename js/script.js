@@ -1,6 +1,6 @@
 'use strict';
 
-const avatars = document.querySelectorAll('avatars img');
+const avatars = querySelectorAll('avatars img');
 
 avatars.forEach(avatar => {
     avatar.addEventListener('click', selectAvatar)})
