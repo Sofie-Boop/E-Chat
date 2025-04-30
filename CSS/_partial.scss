@@ -36,19 +36,6 @@ $border-radius: 20px;
     margin-bottom: 15px;
 }
 
-@mixin desktopstandardbg {
-    background: $primary-gradient;
-    color: white;
-    border-radius: $border-radius  $border-radius $border-radius  $border-radius;
-    margin: auto;
-    margin-top: 30px;
-    width: 100svw; /* 100% indtil max-width nås */
-    max-width: 800px;
-    min-height: 280svh;
-    padding: 20px;
-    margin-bottom: 35px;
-}
-
 @mixin badbg {
     background: $error-bg;
     border-radius: $border-radius  $border-radius  $border-radius  $border-radius;
@@ -73,23 +60,55 @@ $border-radius: 20px;
     }
 }
 
+@mixin desktopstandardbg {
+    background: $primary-gradient;
+    color: white;
+    border-radius: $border-radius  $border-radius $border-radius  $border-radius;
+    margin: auto;
+    margin-top: 30px;
+    width: 100svw; /* 100% indtil max-width nås */
+    max-width: 800px;
+    min-height: 280svh;
+    padding: 20px;
+    margin-bottom: 35px;
+}
+
+@mixin desktopbadbg {
+    background: $error-bg;
+    border-radius: $border-radius  $border-radius  $border-radius  $border-radius;
+    margin: auto;
+    margin-top: 30px;
+    width: 100svw; /* 100% indtil max-width nås */
+    max-width: 800px;
+    min-height: 65svh;
+    padding: 20px;
+    margin-bottom: 35px;
+    h1, h2{
+        color: black;
+    }
+    
+    h1 {
+        float: right;
+        margin-top: -5px;
+        margin-right: 265px;
+    }
+
+    h2 {
+        margin-bottom: -8px;
+    }
+
+    img {
+        margin-left: 250px;
+        margin-top: 10px;
+    }
+}
+
 @mixin messagecontainer {
     background-color: $fifth-color;
     color: black;
     border-radius: $border-radius  $border-radius $border-radius $border-radius;
     text-align: center;
     padding-top: 5px;
-}
-
-@mixin hidden {
-    visibility: hidden;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px; 
 }
 
 @mixin gradient-colour {
@@ -125,4 +144,43 @@ $border-radius: 20px;
     cursor: pointer;
     border-radius: 30px;
     text-align: center;
+}
+
+@mixin desktopstandardbtn {
+    font-family: "Coiny", system-ui;
+    position: relative;
+    background-color: $primary-color;
+    color: white; 
+    font-size: 20px;
+    padding: 20px 120px;
+    margin-left: 245px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-align: center;
+}
+
+@mixin desktopbadbtn {
+    font-family: "Coiny", system-ui;
+    position: relative;
+    background-color: $primary-color;
+    color: black; 
+    font-size: 20px;
+    padding: 20px 120px;
+    margin-left: 260px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-align: center;
+}
+
+@mixin hidden {
+    visibility: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px; 
 }
