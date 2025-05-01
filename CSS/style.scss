@@ -49,7 +49,7 @@ a {
 /*-------------Mobil Styling--------------*/
 /*--------Login-box---------*/
 .login-page {
-    
+    display: none;
 }
 
 .login-container {
@@ -149,7 +149,7 @@ input[type=text]:focus {
 
 /*--------Chatbox--------*/
 .chatbox {
-    display: none;
+    
 }
 
 .chat-container {
@@ -159,12 +159,25 @@ input[type=text]:focus {
         max-width: 30%;
     }
 }
+/*--------Chatinfo container--------*/
+.chatinfo-container {
+    background: linear-gradient(partial.$secondary-color, partial.$tertiary-color);
+    border-radius: 30px;
+        
+        h2 {
+            margin-top: -50px;
+        }
+
+        img {
+            
+        }
+}
 /*--------Messages--------*/
-.message-container1, .message-container2 {
+.message-container1, .message-container2, .message-container3 {
    @include partial.messagecontainer;
 }
 
-.chatmessage1, .chatmessage2 {
+.chatmessage1, .chatmessage2, .chatmessage3 {
     display: flex;
 }
 
@@ -172,15 +185,23 @@ input[type=text]:focus {
 .answer-container {
     background-color: partial.$fifth-color;
     border-radius: partial.$border-radius  partial.$border-radius partial.$border-radius partial.$border-radius;
-    padding-bottom: 50px
+    min-height: 55svh;
+
+    h2, h3 {
+        color: partial.$tertiary-color;
+    }
+
+    h3 {
+        margin-bottom: 30px
+    }
 }
 
 .answer1btn, .answer2btn, .answer3btn {
-    @include partial.standardbtn;
-    font-size: 16px;
+    @include partial.answerbtn;
+    
 }
 
-.answer1btn, .answer2btn, .answer3btn:hover {
+.answer1btn:hover, .answer2btn:hover, .answer3btn:hover {
     background-color: partial.$fourth-color;
     color: white;
 }
