@@ -49,10 +49,6 @@ a {
 /*----------------------------------------*/
 /*-------------Mobil Styling--------------*/
 /*--------Login-box---------*/
-.login-page {
-  display: none;
-}
-
 .login-container {
   background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
   color: white;
@@ -176,6 +172,10 @@ input[type=text]:focus {
 }
 
 /*--------Chatbox--------*/
+.chatbox {
+  display: none;
+}
+
 .chat-container {
   background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
   color: white;
@@ -192,6 +192,7 @@ input[type=text]:focus {
   max-width: 30%;
 }
 
+/*--------Messages--------*/
 .message-container1, .message-container2 {
   background-color: #FFFFFF;
   color: black;
