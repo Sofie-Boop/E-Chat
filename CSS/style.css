@@ -1,7 +1,25 @@
 @charset "UTF-8";
 /*----Variabler----*/
+/*-------------------------*/
 /*----Mixins----*/
 /*@mixin navn(){}*/
+/*--------Ikon Placering---------*/
+/*-------------------------*/
+/*--------Gradient-colour---------*/
+/*-------------------------*/
+/*--------Hidden---------*/
+/*-------------------------*/
+/*--------Baggrunde---------*/
+/*-------------------------*/
+/*--------Desktop Baggrunde---------*/
+/*-------------------------*/
+/*--------Message Baggrund---------*/
+/*-------------------------*/
+/*--------Desktop Message Baggrund---------*/
+/*-------------------------*/
+/*--------Knapper---------*/
+/*-------------------------*/
+/*--------Desktop Knapper---------*/
 /*--------General Styling---------*/
 body {
   margin: 0;
@@ -175,7 +193,9 @@ input[type=text]:focus {
   color: white;
 }
 
+/*-------------------------*/
 /*--------Chatbox--------*/
+/*--------Chat container & Messages--------*/
 .chat-container {
   background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
   color: white;
@@ -190,6 +210,12 @@ input[type=text]:focus {
 }
 .chat-container img {
   max-width: 30%;
+  align-self: end;
+}
+
+/*--------3 Dots Img--------*/
+.dot {
+  margin-top: 30px;
 }
 
 /*--------Chatinfo container--------*/
@@ -207,13 +233,14 @@ input[type=text]:focus {
   border-radius: 20px 20px 20px 20px;
   text-align: center;
   padding-top: 5px;
+  margin-bottom: 25px;
 }
 
 .chatmessage1, .chatmessage2, .chatmessage3 {
   display: flex;
 }
 
-/*--------Answer Buttons--------*/
+/*--------Answer Container--------*/
 .answer-container {
   background-color: #FFFFFF;
   border-radius: 20px 20px 20px 20px;
@@ -226,6 +253,7 @@ input[type=text]:focus {
   margin-bottom: 30px;
 }
 
+/*--------Answer Buttons--------*/
 .answer1btn, .answer2btn, .answer3btn {
   font-family: "Coiny", system-ui;
   font-size: 19px;
@@ -246,6 +274,7 @@ input[type=text]:focus {
   color: white;
 }
 
+/*-------------------------*/
 /*--------Ending 1--------*/
 .ending1 {
   display: none;
@@ -297,6 +326,7 @@ input[type=text]:focus {
   background-color: #BCB0D4;
 }
 
+/*-------------------------*/
 /*--------Ending 2--------*/
 .ending2 {
   display: none;
@@ -352,6 +382,7 @@ input[type=text]:focus {
   background-color: #BCB0D4;
 }
 
+/*-------------------------*/
 /*--------Ending 3--------*/
 .ending3 {
   display: none;
@@ -402,6 +433,7 @@ input[type=text]:focus {
   color: white;
 }
 
+/*-------------------------*/
 /*--------Ending 4--------*/
 .ending4 {
   display: none;
@@ -452,11 +484,13 @@ input[type=text]:focus {
   color: white;
 }
 
+/*-------------------------*/
 /*--------Infografi--------*/
 .infografi {
   display: none;
 }
 
+/*-------------------------*/
 /*--------Mobil Footer---------*/
 .mobilfooter {
   display: flex;
@@ -469,6 +503,7 @@ input[type=text]:focus {
   max-width: 50%;
 }
 
+/*-------------------------*/
 /*--------Desktop Footer--------*/
 @media screen and (max-width: 968px) {
   .desktopfooter {
@@ -502,6 +537,7 @@ input[type=text]:focus {
   p, a {
     font-size: 20px;
   }
+  /*-------------------------*/
   /*--------Login Box---------*/
   .login-container {
     background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
@@ -546,6 +582,7 @@ input[type=text]:focus {
     border-radius: 30px;
     text-align: center;
   }
+  /*-------------------------*/
   /*--------Ending 1--------*/
   .ending1-container {
     background: linear-gradient(#FBB394, #5A3572);
@@ -587,6 +624,7 @@ input[type=text]:focus {
     border-radius: 30px;
     text-align: center;
   }
+  /*-------------------------*/
   /*--------Ending 2--------*/
   .ending2-container {
     background: linear-gradient(#FBB394, #5A3572);
@@ -632,6 +670,7 @@ input[type=text]:focus {
     border-radius: 30px;
     text-align: center;
   }
+  /*-------------------------*/
   /*--------Ending 3--------*/
   .ending3-container {
     background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
@@ -660,6 +699,7 @@ input[type=text]:focus {
     border-radius: 30px;
     text-align: center;
   }
+  /*-------------------------*/
   /*--------Ending 4--------*/
   .ending4-container {
     background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
@@ -688,6 +728,7 @@ input[type=text]:focus {
     border-radius: 30px;
     text-align: center;
   }
+  /*-------------------------*/
   /*--------Mobil Footer---------*/
   .mobilfooter {
     visibility: hidden;
@@ -700,6 +741,7 @@ input[type=text]:focus {
     white-space: nowrap;
     width: 1px;
   }
+  /*-------------------------*/
   /*--------Desktop Footer---------*/
   .desktopfooter {
     display: flex;
@@ -711,4 +753,5 @@ input[type=text]:focus {
   .desktopfooter img {
     max-width: 60%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*----------------------------------------*//*# sourceMappingURL=style.css.map */

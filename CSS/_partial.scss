@@ -9,12 +9,15 @@ $error-bg: linear-gradient(#FBB394, #5A3572);
 $error-color: #E51518;
 $loading-bg: linear-gradient(#AA64D8, #5A3572);
 $border-radius: 20px;
+/*-------------------------*/
 
 /*----Mixins----*/ 
 /*@mixin navn(){}*/
 //Parentesen kan indeholde lokale og globale variabler, som gør enkelte elementer i mixin redigerbare. ($bg-color: $bt-color, text-color)
 //Ved kald brug @include
 
+
+/*--------Ikon Placering---------*/
 @mixin iconplacement {
     display: flex;
     justify-content: space-between;
@@ -22,7 +25,28 @@ $border-radius: 20px;
     align-items: center;
     text-align: center;
 }
-
+/*-------------------------*/
+/*--------Gradient-colour---------*/
+@mixin gradient-colour {
+    background: -webkit-linear-gradient(#AA64D8, #F7A3DF,#6EBDFF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*-------------------------*/
+/*--------Hidden---------*/
+@mixin hidden {
+    visibility: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px; 
+}
+/*-------------------------*/
+/*--------Baggrunde---------*/
 @mixin standardbg {
     background: $primary-gradient;
     color: white;
@@ -60,7 +84,8 @@ $border-radius: 20px;
         margin-bottom: -5px;
     }
 }
-
+/*-------------------------*/
+/*--------Desktop Baggrunde---------*/
 @mixin desktopstandardbg {
     background: $primary-gradient;
     color: white;
@@ -103,22 +128,21 @@ $border-radius: 20px;
         margin-top: 10px;
     }
 }
-
+/*-------------------------*/
+/*--------Message Baggrund---------*/
 @mixin messagecontainer {
     background-color: $fifth-color;
     color: black;
     border-radius: $border-radius  $border-radius $border-radius $border-radius;
     text-align: center;
     padding-top: 5px;
+    margin-bottom: 25px;
 }
+/*-------------------------*/
+/*--------Desktop Message Baggrund---------*/
 
-@mixin gradient-colour {
-    background: -webkit-linear-gradient(#AA64D8, #F7A3DF,#6EBDFF);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
+/*-------------------------*/
+/*--------Knapper---------*/
 @mixin standardbtn {
     font-family: "Coiny", system-ui;
     position: relative;
@@ -161,7 +185,8 @@ $border-radius: 20px;
     text-align: center;
     margin-bottom: 30px;
 }
-
+/*-------------------------*/
+/*--------Desktop Knapper---------*/
 @mixin desktopstandardbtn {
     font-family: "Coiny", system-ui;
     position: relative;
@@ -188,15 +213,4 @@ $border-radius: 20px;
     cursor: pointer;
     border-radius: 30px;
     text-align: center;
-}
-
-@mixin hidden {
-    visibility: hidden;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px; 
 }
