@@ -138,11 +138,11 @@ input[type=text]:focus {
 }
 
 /*--------Login Button--------*/
-.loginbtn {
+#loginbtn {
   @include partial.standardbtn;
 }
 
-.loginbtn:hover {
+#loginbtn:hover {
     background-color: partial.$fourth-color;
     color: white;
 }
@@ -379,41 +379,42 @@ input[type=text]:focus {
     }
 
     /*-------------------------*/
-     /*--------Login Box---------*/
-     .login-container {
+    /*--------Login Box---------*/
+    .login-container {
         @include partial.desktopstandardbg;
-     }
+    }
 
-     .welcome-window {
+    .welcome-window {
         height: 400px;
-     }
+        border-radius: partial.$border-radius2;
+    }
 
-     .heading1 {
+    .heading1 {
         font-size: 36px;
         margin-top: -8px;
         margin-left: 150px;
-     }
+    }
 
-     .heading2 {
+    .heading2 {
         font-size: 34px;
         margin-top: 125px;
         margin-left: 150px;
-     }
+    }
 
-     /*--------Profil & Background Images--------*/
-     .picturebox {
+    /*--------Profil & Background Images--------*/
+    .picturebox {
         margin-bottom: 50px;
     }
 
-     /*--------Login Button---------*/
-     .loginbtn {
+    /*--------Login Button---------*/
+    #loginbtn {
         @include partial.desktopstandardbtn
-     }
+    }
 
-     /*-------------------------*/
+    /*-------------------------*/
 
-     /*--------Chatbox--------*/
-     /*--------Chat container & Messages--------*/
+    /*--------Chatbox--------*/
+    /*--------Chat container & Messages--------*/
     .chat-container {
         @include partial.desktopstandardbg;
         min-height: 245svh;
