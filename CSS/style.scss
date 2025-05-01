@@ -173,10 +173,6 @@ input[type=text]:focus {
         h2 {
             margin-top: -50px;
         }
-
-        img {
-            
-        }
 }
 /*--------Messages--------*/
 .message-container1, .message-container2, .message-container3 {
@@ -381,6 +377,7 @@ input[type=text]:focus {
     p, a {
         font-size: 20px;
     }
+
     /*-------------------------*/
      /*--------Login Box---------*/
      .login-container {
@@ -404,7 +401,6 @@ input[type=text]:focus {
      }
 
      /*--------Profil & Background Images--------*/
-
      .picturebox {
         margin-bottom: 50px;
     }
@@ -413,15 +409,46 @@ input[type=text]:focus {
      .loginbtn {
         @include partial.desktopstandardbtn
      }
+
      /*-------------------------*/
-     /*--------Ending 1--------*/
-     .ending1-container {
+
+     /*--------Chatbox--------*/
+     /*--------Chat container & Messages--------*/
+    .chat-container {
+        @include partial.desktopstandardbg;
+        min-height: 245svh;
+    }
+
+    /*--------Chatinfo container--------*/
+    .chatinfo-container {
+        border-radius: partial.$border-radius2, partial.$border-radius2, partial.$border-radius2, partial.$border-radius2;
+    }
+
+    /*--------Messages--------*/
+    .message-container1, .message-container2, .message-container3 {
+        @include partial.desktopmessagecontainer
+    }
+
+    /*--------Answer Container--------*/
+    .answer-container {
+        min-height: 90svh;
+    }
+
+    /*--------Answer Buttons--------*/
+    .answer1btn, .answer2btn, .answer3btn {
+        @include partial.desktopanswerbtn
+    }
+
+    /*--------Ending 1--------*/
+    .ending1-container {
         @include partial.desktopbadbg;
     }
+
     /*--------Ending 1 btn--------*/
     .warningbtn {
         @include partial.desktopbadbtn;
     }
+
     /*-------------------------*/
     /*--------Ending 2--------*/
     .ending2-container {
@@ -437,6 +464,7 @@ input[type=text]:focus {
     .errorbtn {
         @include partial.desktopbadbtn;
     }
+
     /*-------------------------*/
     /*--------Ending 3--------*/
     .ending3-container {
@@ -448,6 +476,7 @@ input[type=text]:focus {
     .logoff1btn {
         @include partial.desktopstandardbtn;
     }
+
     /*-------------------------*/
     /*--------Ending 4--------*/
     .ending4-container {
@@ -459,11 +488,13 @@ input[type=text]:focus {
     .logoff2btn {
         @include partial.desktopstandardbtn;
     }
+
     /*-------------------------*/
     /*--------Mobil Footer---------*/
     .mobilfooter {
         @include partial.hidden;
     }
+
     /*-------------------------*/
     /*--------Desktop Footer---------*/
     .desktopfooter {
@@ -475,4 +506,3 @@ input[type=text]:focus {
 
     }
 }
-/*----------------------------------------*/
