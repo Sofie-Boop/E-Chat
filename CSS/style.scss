@@ -49,7 +49,7 @@ a {
 /*-------------Mobil Styling--------------*/
 /*--------Login-box---------*/
 .login-page {
-    display: none
+    display: none;
 }
 
 .login-container {
@@ -188,16 +188,11 @@ input[type=text]:focus {
 /*--------Ending 1--------*/
 
 .ending1 {
-    
+   display: none; 
 }
 
 .ending1-container {
     @include partial.badbg;
-
-    h1 {
-        margin-top: -5px;
-        margin-right: 30px;
-    }
 }
 
 .advice1 {
@@ -215,7 +210,7 @@ input[type=text]:focus {
 /*--------Ending 2--------*/
 
 .ending2 {
-    display: none;
+   display: none;
 }
 
 .ending2-container {
@@ -223,8 +218,7 @@ input[type=text]:focus {
     min-height: 52svh;
 
     h1 {
-        margin-top: -5px;
-        float: right;
+        margin-right: 50px;
     }
 }
 
@@ -400,20 +394,42 @@ input[type=text]:focus {
         @include partial.desktopbadbtn;
     }
     
-    /*--------Baggrunds Styling---------*/
-
+    /*--------Ending 2--------*/
     .ending2-container {
-        min-height: 62svh;
+       @include partial.desktopbadbg;
+       min-height: 70svh;
+
+       h1 {
+        margin-right: 295px;
+       }
     }
-    
+
+     /*--------Ending 2 btn--------*/
+    .errorbtn {
+        @include partial.desktopbadbtn;
+    }
+
+    /*--------Ending 3--------*/
     .ending3-container {
-        min-height: 80svh;
+        @include partial.desktopstandardbg;
+        min-height: 75svh;
     }
 
+    /*--------Ending 3 btn--------*/
+    .logoff1btn {
+        @include partial.desktopstandardbtn;
+    }
+
+    /*--------Ending 4--------*/
     .ending4-container {
-        min-height: 85svh;
+        @include partial.desktopstandardbg;
+        min-height: 78svh;
     }
 
+    /*--------Ending 4 btn--------*/
+    .logoff2btn {
+        @include partial.desktopstandardbtn;
+    }
 
     /*--------Mobil Footer---------*/
     .mobilfooter {

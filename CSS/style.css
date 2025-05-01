@@ -236,6 +236,10 @@ input[type=text]:focus {
 }
 
 /*--------Ending 1--------*/
+.ending1 {
+  display: none;
+}
+
 .ending1-container {
   background: linear-gradient(#FBB394, #5A3572);
   border-radius: 20px 20px 20px 20px;
@@ -252,14 +256,11 @@ input[type=text]:focus {
 }
 .ending1-container h1 {
   float: right;
-  margin-top: -50px;
+  margin-top: -5px;
+  margin-right: 30px;
 }
 .ending1-container h2 {
   margin-bottom: -5px;
-}
-.ending1-container h1 {
-  margin-top: -5px;
-  margin-right: 30px;
 }
 
 .advice1 {
@@ -307,14 +308,14 @@ input[type=text]:focus {
 }
 .ending2-container h1 {
   float: right;
-  margin-top: -50px;
+  margin-top: -5px;
+  margin-right: 30px;
 }
 .ending2-container h2 {
   margin-bottom: -5px;
 }
 .ending2-container h1 {
-  margin-top: -5px;
-  float: right;
+  margin-right: 50px;
 }
 
 .advice2 {
@@ -575,15 +576,106 @@ input[type=text]:focus {
     border-radius: 30px;
     text-align: center;
   }
-  /*--------Baggrunds Styling---------*/
+  /*--------Ending 2--------*/
   .ending2-container {
-    min-height: 62svh;
+    background: linear-gradient(#FBB394, #5A3572);
+    border-radius: 20px 20px 20px 20px;
+    margin: auto;
+    margin-top: 30px;
+    width: 100svw; /* 100% indtil max-width nås */
+    max-width: 800px;
+    min-height: 65svh;
+    padding: 20px;
+    margin-bottom: 35px;
+    min-height: 70svh;
   }
+  .ending2-container h1, .ending2-container h2 {
+    color: black;
+  }
+  .ending2-container h1 {
+    float: right;
+    margin-top: -5px;
+    margin-right: 265px;
+  }
+  .ending2-container h2 {
+    margin-bottom: -8px;
+  }
+  .ending2-container img {
+    margin-left: 250px;
+    margin-top: 10px;
+  }
+  .ending2-container h1 {
+    margin-right: 295px;
+  }
+  /*--------Ending 2 btn--------*/
+  .errorbtn {
+    font-family: "Coiny", system-ui;
+    position: relative;
+    background-color: #AA64D8;
+    color: black;
+    font-size: 20px;
+    padding: 20px 120px;
+    margin-left: 260px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-align: center;
+  }
+  /*--------Ending 3--------*/
   .ending3-container {
-    min-height: 80svh;
+    background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
+    color: white;
+    border-radius: 20px 20px 20px 20px;
+    margin: auto;
+    margin-top: 30px;
+    width: 100svw; /* 100% indtil max-width nås */
+    max-width: 800px;
+    min-height: 280svh;
+    padding: 20px;
+    margin-bottom: 35px;
+    min-height: 75svh;
   }
+  /*--------Ending 3 btn--------*/
+  .logoff1btn {
+    font-family: "Coiny", system-ui;
+    position: relative;
+    background-color: #AA64D8;
+    color: white;
+    font-size: 20px;
+    padding: 20px 120px;
+    margin-left: 245px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-align: center;
+  }
+  /*--------Ending 4--------*/
   .ending4-container {
-    min-height: 85svh;
+    background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
+    color: white;
+    border-radius: 20px 20px 20px 20px;
+    margin: auto;
+    margin-top: 30px;
+    width: 100svw; /* 100% indtil max-width nås */
+    max-width: 800px;
+    min-height: 280svh;
+    padding: 20px;
+    margin-bottom: 35px;
+    min-height: 78svh;
+  }
+  /*--------Ending 4 btn--------*/
+  .logoff2btn {
+    font-family: "Coiny", system-ui;
+    position: relative;
+    background-color: #AA64D8;
+    color: white;
+    font-size: 20px;
+    padding: 20px 120px;
+    margin-left: 245px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-align: center;
   }
   /*--------Mobil Footer---------*/
   .mobilfooter {
