@@ -176,10 +176,6 @@ input[type=text]:focus {
 }
 
 /*--------Chatbox--------*/
-.chatbox {
-  display: none;
-}
-
 .chat-container {
   background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
   color: white;
