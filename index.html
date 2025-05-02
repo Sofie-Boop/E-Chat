@@ -17,19 +17,24 @@
 </head>
 <body>
     <main>
+
+        <!-- Login Page -->
         <section id="loginPage">
+            <!-- Login Container -->
             <div class="login-container">
+                <!-- Welcome Window & Intro til section-->
                 <div class="welcome-window">
                     <h1 class="heading1">Welcome To E-Chat</h1>
                     <h2 class="heading2 ">Log In</h2>
             </div>
-                
+                <!-- User Name Form -->
                 <form>
                     <label for="uname">User Name:</label>
                     <input type="text" id="uname" placeholder="User Name" required>
                 </form>
-
+                <!-- Picture Box -->
                 <div class="picturebox">
+                    <!-- Avatar Valg -->
                     <h3 class="heading3">Pick An Avatar:</h3>
                     <div id="avatars">
                         <div class="row1">
@@ -43,7 +48,7 @@
                             <img class="avatar6" src="img/avatar6.png" alt="Kitten sitting in the rain">
                         </div>
                     </div>
-
+                    <!-- Bg Valg -->
                     <h3 class="heading4">Pick A Background:</h3>
                     <div id="bg">
                         <div class="row3">
@@ -58,20 +63,22 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- Login Brn - leder til næste section -->
                 <div class="loginbutton">
                     <button id="loginBtn" aria-label="Logs into E-Chat">Log In</button>
                 </div>
-
             </div>
         </section>
 
+        <!-- Chat  -->
         <section id="chat">
+            <!-- Chat Container & Intro til section -->
             <div class="chat-container">
                 <div class="chatinfo-container">
                     <h1>E-chat Message</h1>
                     <h2>Julie</h2>
                 </div>
+                <!-- Chat Messages -->
                 <div class="chatmessage1">
                     <img class="chatbot" src="img/chatbot.png" alt="Girl sitting on roof overlooking the city">
                     <div class="message-container1">
@@ -93,19 +100,21 @@
                     </div>
                         <img id="user" src="img/avatar3.png" alt="user chossen profile picture">
                 </div>
-
+                <!-- Answer Container & Valgte brugernavn -->
                 <div class="answer-container">
                     <h2 id="userName">(User Name)</h2>
                     <h3>Reply Options:</h3>
+                    <!-- Svar Muligheder -->
                     <div class="answerbtns">
-                        <button id="answer1btn" aria-label="Answer: Click on link to message">Click On Link</button>
-                        <button id="answer2btn" aria-label="Answer: Talk to Julie">Talk To Julie</button>
-                        <button id="answer3btn" aria-label="Answer: Ignore message">Ignore Message</button>
+                        <button id="answer1btn" aria-label="Answer: Click on link to message">Click On Link</button> <!-- Fører til ending1 -->
+                        <button id="answer2btn" aria-label="Answer: Talk to Julie">Talk To Julie</button> <!-- Fører til ending2 -->
+                        <button id="answer3btn" aria-label="Answer: Ignore message">Ignore Message</button> <!-- Fører til ending3 -->
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Ending1 -->
         <section id="ending1">
             <div class="ending1-container">
                 <div class="textbox1">
@@ -118,11 +127,12 @@
                     <p class="advice1"><strong>Never click on any links from people that you don’t know</strong></p>
                 </div>
                 <div>
-                    <button id="warningbtn" aria-label="Leads to Infographic page">Ok</button>
+                    <button id="warningbtn" aria-label="Leads to Infographic page">Ok</button> <!-- Fører til infografi section -->
                 </div>
             </div>
         </section>
 
+        <!-- Ending2 -->
         <section id="ending2">
             <div class="ending2-container">
                 <div>
@@ -135,11 +145,12 @@
                     <p class="advice2"><strong>Never give personal information about yourself to people online you don’t know</strong></p>
                 </div>
                 <div>
-                    <button id="errorbtn" aria-label="Leads to Infographic page">Ok</button>
+                    <button id="errorbtn" aria-label="Leads to Infographic page">Ok</button> <!-- Fører til Infografi section -->
                 </div>
             </div>
         </section>
 
+        <!-- Ending3 -->
         <section id="ending3">
             <div class="ending3-container">
                 <div class="textbox3">
@@ -149,11 +160,12 @@
                     <p class="advice3"><strong>It is never a good idea to talk to strangers online because you never know who they are or what their intentions are</strong></p>
                 </div>
                 <div>
-                    <button id="logoff1btn" aria-label="Leads to Infographic page">Log Off</button>
+                    <button id="logoff1btn" aria-label="Leads to Infographic page">Log Off</button> <!-- Fører til Infografi section -->
                 </div>
             </div>
         </section>
 
+        <!-- Ending 4 -->
         <section id="ending4">
             <div class="ending4-container">
                 <div class="textbox4">
@@ -163,17 +175,19 @@
                     <p class="advice4"><strong>It is never a good idea to talk to strangers online because you never know who they are or what their intentions are</strong></p>
                 </div>
                 <div>
-                    <button id="logoff2btn" aria-label="Leads to Infographic page">Log Off</button>
+                    <button id="logoff2btn" aria-label="Leads to Infographic page">Log Off</button> <!-- Fører til Infografi section -->
                 </div>
             </div>
         </section>
 
-
+        <!-- Infografi -->
         <section id="infografi">
+            <!-- Intro Container -->
             <div class="intro-container">
                 <img class="emoji1" src="img/emoji1.png" alt="Curious face">
                 <h1>Chat History</h1>
             </div>
+            <!-- Første info container -->
             <div class="info1-container">
                 <div class="infobox1">
                     <h2>Social Engineering</h2>
@@ -183,7 +197,8 @@
                     <p>Cyberattacks involving Social Engineering</p>
                     <img class="infographic1" src ="img/infographic1.png" alt="A bar showing 98%">
                 </div>
-                <div class="infobox3">
+                <!-- Anden info container -->
+                <div class="info2-container">
                     <div class="row5">
                         <p>Danish children & young people in ages 12-18, who has a a social media profile</p>
                         <img class="infographic2" src ="img/infographic2.png" alt="A bar showing 99%">
@@ -201,6 +216,12 @@
                         <img class="infographic5" src ="img/infographic5.png" alt="A bar showing 49%">
                     </div>
                 </div>
+                <!-- Info Indledning 1 -->
+                <div class="infoheading1-container">
+                    <img class="emoji2" src ="img/emoji2.png" alt="Curious with a raised eyebrow face">
+                    <h2>8 Types of Social Engineering</h2>
+                </div>
+                <!-- Første Collapsible -->
             </div>
         </section>
 
