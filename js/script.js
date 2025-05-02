@@ -161,3 +161,13 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 /*--------End Chat History --> Return To Start btn---------*/
+const endchathistorybtn = document.getElementById ("endchathistorybtn");
+
+endchathistorybtn.addEventListener("click", () => {
+
+    if (infografi.style.display !== "none") {
+        infografi.style.display = "none";
+        loginPage.style.display = "block";
+      
+    };
+})
