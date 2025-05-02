@@ -1,8 +1,5 @@
 'use strict';
 
-/*-------------Variabler--------------*/
-
-
 /*-------------Login Page--------------*/
 /*--------Avatar Valg---------*/
 const avatars = document.querySelectorAll('#avatars img');
@@ -14,7 +11,6 @@ const selectAvatar = (e) => {
 
 avatars.forEach(avatar => {
     avatar.addEventListener('click', selectAvatar)})
-
 
 
 /*--------Baggrundsbillede Valg---------*/
@@ -29,6 +25,7 @@ avatars.forEach(avatar => {
 bgs.forEach (bg => {
     bg.addEventListener ('click', selectbg)})
 
+
 /*--------Avatar ikon & Brugernavn---------*/
 const user = document.getElementById ("user");
 const userName = document.getElementById ("userName");
@@ -36,6 +33,7 @@ const customiseUI = () => {
     user.src = avatarSelected;
     userName.textContent = uName;
 }
+
 
 /*---------Login Page - Login btn---------*/
 const loginBtn = document.getElementById("loginBtn");
@@ -53,11 +51,12 @@ loginBtn.addEventListener("click", () => {
     };
 })
 
-/*--------Chat - answerbtn1---------*/
+/*-------------Chat--------------*/
+/*--------Answerbtn1---------*/
 
-/*--------Chat - answerbtn2---------*/
+/*--------Answerbtn2---------*/
 
-/*--------Chat - answerbtn3---------*/
+/*--------Answerbtn3---------*/
 
 /*-------------Ending 1--------------*/
 /*--------warningbtn---------*/
