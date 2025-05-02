@@ -26,7 +26,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Fira Sans", sans-serif;
-  background-image: url(../img/background1.png);
+  background-image: url(../img/bg1.png);
   background-size: cover;
 }
 
@@ -69,6 +69,10 @@ a {
 /*----------------------------------------*/
 /*-------------Mobil Styling--------------*/
 /*--------Login Page---------*/
+#loginPage {
+  display: none;
+}
+
 .login-container {
   background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
   color: white;
@@ -167,8 +171,14 @@ input[type=text]:focus {
   margin-top: 5px;
 }
 
-.avatar, .background1, .background2, .background3, .background4, .background5, .background6 {
+#avatars img, #bg img {
   max-width: 30%;
+  border-radius: 20%;
+  cursor: pointer;
+}
+
+.avatar1 input:focus, .avatar2:focus, .avatar3:focus, .avatar4:focus, .avatar5:focus, .avatar6:focus, .bg1:focus, .bg2:focus, .bg3:focus, .bg4:focus, .bg5:focus, .bg6:focus {
+  border: 3px soild #BCB0D4;
 }
 
 /*--------Login Button--------*/
@@ -193,10 +203,6 @@ input[type=text]:focus {
 
 /*-------------------------*/
 /*--------Chat--------*/
-#chat {
-  display: none;
-}
-
 /*--------Chat container & Messages--------*/
 .chat-container {
   background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
@@ -257,7 +263,7 @@ input[type=text]:focus {
 }
 
 /*--------Answer Buttons--------*/
-.answer1btn, .answer2btn, .answer3btn {
+#answer1btn, #answer2btn, #answer3btn {
   font-family: "Coiny", system-ui;
   font-size: 18px;
   background-color: #AA64D8;
@@ -274,14 +280,14 @@ input[type=text]:focus {
   margin-right: 5px;
 }
 
-.answer1btn:hover, .answer2btn:hover, .answer3btn:hover {
+#answer1btn:hover, #answer2btn:hover, #answer3btn:hover {
   background-color: #BCB0D4;
   color: white;
 }
 
 /*-------------------------*/
 /*--------Ending 1--------*/
-.ending1 {
+#ending1 {
   display: none;
 }
 
@@ -313,7 +319,7 @@ input[type=text]:focus {
 }
 
 /*--------Ending 1 btn--------*/
-.warningbtn {
+#warningbtn {
   font-family: "Coiny", system-ui;
   position: relative;
   background-color: #AA64D8;
@@ -327,7 +333,7 @@ input[type=text]:focus {
   text-align: center;
 }
 
-.warningbtn:hover {
+#warningbtn:hover {
   background-color: #BCB0D4;
 }
 
@@ -369,7 +375,7 @@ input[type=text]:focus {
 }
 
 /*--------Ending 2 btn--------*/
-.errorbtn {
+#errorbtn {
   font-family: "Coiny", system-ui;
   position: relative;
   background-color: #AA64D8;
@@ -383,13 +389,13 @@ input[type=text]:focus {
   text-align: center;
 }
 
-.errorbtn:hover {
+#errorbtn:hover {
   background-color: #BCB0D4;
 }
 
 /*-------------------------*/
 /*--------Ending 3--------*/
-.ending3 {
+#ending3 {
   display: none;
 }
 
@@ -418,7 +424,7 @@ input[type=text]:focus {
 }
 
 /*--------Ending 3 btn--------*/
-.logoff1btn {
+#logoff1btn {
   font-family: "Coiny", system-ui;
   position: relative;
   background-color: #AA64D8;
@@ -433,14 +439,14 @@ input[type=text]:focus {
   margin-left: 26px;
 }
 
-.logoff1btn:hover {
+#logoff1btn:hover {
   background-color: #BCB0D4;
   color: white;
 }
 
 /*-------------------------*/
 /*--------Ending 4--------*/
-.ending4 {
+#ending4 {
   display: none;
 }
 
@@ -469,7 +475,7 @@ input[type=text]:focus {
 }
 
 /*--------Ending 4 btn--------*/
-.logoff2btn {
+#logoff2btn {
   font-family: "Coiny", system-ui;
   position: relative;
   background-color: #AA64D8;
@@ -484,14 +490,14 @@ input[type=text]:focus {
   margin-left: 26px;
 }
 
-.logoff2btn:hover {
+#logoff2btn:hover {
   background-color: #BCB0D4;
   color: white;
 }
 
 /*-------------------------*/
 /*--------Infografi--------*/
-.infografi {
+#infografi {
   display: none;
 }
 
@@ -622,7 +628,7 @@ input[type=text]:focus {
     min-height: 90svh;
   }
   /*--------Answer Buttons--------*/
-  .answer1btn, .answer2btn, .answer3btn {
+  #answer1btn, #answer2btn, #answer3btn {
     font-family: "Coiny", system-ui;
     position: relative;
     background-color: #AA64D8;
@@ -664,7 +670,7 @@ input[type=text]:focus {
     margin-top: 10px;
   }
   /*--------Ending 1 btn--------*/
-  .warningbtn {
+  #warningbtn {
     font-family: "Coiny", system-ui;
     position: relative;
     background-color: #AA64D8;
@@ -710,7 +716,7 @@ input[type=text]:focus {
     margin-right: 295px;
   }
   /*--------Ending 2 btn--------*/
-  .errorbtn {
+  #errorbtn {
     font-family: "Coiny", system-ui;
     position: relative;
     background-color: #AA64D8;
@@ -739,7 +745,7 @@ input[type=text]:focus {
     min-height: 75svh;
   }
   /*--------Ending 3 btn--------*/
-  .logoff1btn {
+  #logoff1btn {
     font-family: "Coiny", system-ui;
     position: relative;
     background-color: #AA64D8;
@@ -768,7 +774,7 @@ input[type=text]:focus {
     min-height: 78svh;
   }
   /*--------Ending 4 btn--------*/
-  .logoff2btn {
+  #logoff2btn {
     font-family: "Coiny", system-ui;
     position: relative;
     background-color: #AA64D8;

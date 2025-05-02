@@ -6,7 +6,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Fira Sans", sans-serif;
-    background-image: url(../img/background1.png);
+    background-image: url(../img/bg1.png);
     background-size: cover;
 }
   
@@ -51,7 +51,7 @@ a {
 /*-------------Mobil Styling--------------*/
 /*--------Login Page---------*/
 #loginPage {
-    
+    display: none;
 }
 
 .login-container {
@@ -135,9 +135,20 @@ input[type=text]:focus {
     margin-top: 5px;
 }
 
-.avatar, .background1, .background2, .background3, .background4, .background5, .background6 {
-    max-width: 30%;
+#avatars, #bg {
+    img {
+        max-width: 30%;
+        border-radius: 20%;
+        cursor: pointer;
+    }
 }
+
+.avatar1 input:focus, .avatar2:focus, .avatar3:focus, .avatar4:focus, .avatar5:focus, .avatar6:focus, .bg1:focus, .bg2:focus, .bg3:focus, .bg4:focus, .bg5:focus, .bg6:focus {
+    border: 3px soild partial.$fourth-color
+
+}
+
+
 
 /*--------Login Button--------*/
 #loginBtn {
@@ -151,7 +162,7 @@ input[type=text]:focus {
 /*-------------------------*/
 /*--------Chat--------*/
 #chat {
-    display: none;
+    
 }
 /*--------Chat container & Messages--------*/
 .chat-container {
@@ -201,19 +212,19 @@ input[type=text]:focus {
 }
 
 /*--------Answer Buttons--------*/
-.answer1btn, .answer2btn, .answer3btn {
+#answer1btn, #answer2btn, #answer3btn {
     @include partial.answerbtn;
     
 }
 
-.answer1btn:hover, .answer2btn:hover, .answer3btn:hover {
+#answer1btn:hover, #answer2btn:hover, #answer3btn:hover {
     background-color: partial.$fourth-color;
     color: white;
 }
 /*-------------------------*/
 /*--------Ending 1--------*/
 
-.ending1 {
+#ending1 {
    display: none; 
 }
 
@@ -226,10 +237,10 @@ input[type=text]:focus {
 }
 
 /*--------Ending 1 btn--------*/
-.warningbtn {
+#warningbtn {
     @include partial.badbtn;
 }
-.warningbtn:hover {
+#warningbtn:hover {
     background-color: partial.$fourth-color;
 }
 /*-------------------------*/
@@ -253,17 +264,17 @@ input[type=text]:focus {
 }
 
 /*--------Ending 2 btn--------*/
-.errorbtn {
+#errorbtn {
     @include partial.badbtn;
 }
 
-.errorbtn:hover {
+#errorbtn:hover {
     background-color: partial.$fourth-color;
 }
 /*-------------------------*/
 /*--------Ending 3--------*/
 
-.ending3 {
+#ending3 {
     display: none;
 }
 
@@ -286,23 +297,23 @@ input[type=text]:focus {
 }
 
 /*--------Ending 3 btn--------*/
-.logoff1btn {
+#logoff1btn {
     @include partial.standardbtn;
     
     margin-left: 26px;
 }
 
-.logoff1btn:hover {
+#logoff1btn:hover {
     background-color: partial.$fourth-color;
     color: white;
 }
 /*-------------------------*/
 /*--------Ending 4--------*/
-.ending4 {
+#ending4 {
     display: none;
  }
  
- .ending4-container {
+.ending4-container {
      @include partial.standardbg;
     
      min-height: 70svh;
@@ -321,18 +332,18 @@ input[type=text]:focus {
  }
  
  /*--------Ending 4 btn--------*/
- .logoff2btn {
+ #logoff2btn {
      @include partial.standardbtn;
      margin-left: 26px;
  }
 
-.logoff2btn:hover {
+#logoff2btn:hover {
     background-color: partial.$fourth-color;
     color: white;
 } 
 /*-------------------------*/
 /*--------Infografi--------*/
-.infografi {
+#infografi {
     display: none
 }
 
@@ -439,7 +450,7 @@ input[type=text]:focus {
     }
 
     /*--------Answer Buttons--------*/
-    .answer1btn, .answer2btn, .answer3btn {
+    #answer1btn, #answer2btn, #answer3btn {
         @include partial.desktopanswerbtn
     }
 
@@ -449,7 +460,7 @@ input[type=text]:focus {
     }
 
     /*--------Ending 1 btn--------*/
-    .warningbtn {
+    #warningbtn {
         @include partial.desktopbadbtn;
     }
 
@@ -465,7 +476,7 @@ input[type=text]:focus {
     }
 
      /*--------Ending 2 btn--------*/
-    .errorbtn {
+    #errorbtn {
         @include partial.desktopbadbtn;
     }
 
@@ -477,7 +488,7 @@ input[type=text]:focus {
     }
 
     /*--------Ending 3 btn--------*/
-    .logoff1btn {
+    #logoff1btn {
         @include partial.desktopstandardbtn;
     }
 
@@ -489,7 +500,7 @@ input[type=text]:focus {
     }
 
     /*--------Ending 4 btn--------*/
-    .logoff2btn {
+    #logoff2btn {
         @include partial.desktopstandardbtn;
     }
 
