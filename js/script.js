@@ -147,4 +147,4 @@ logoff2btn.addEventListener("click", () => {
 /*-------------Infografi--------------*/
 /*--------collapsible---------*/
 
-/*--------Return To Start btn---------*/
+/*--------End Chat History --> Return To Start btn---------*/
