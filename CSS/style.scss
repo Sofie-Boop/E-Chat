@@ -51,7 +51,7 @@ a {
 /*-------------Mobil Styling--------------*/
 /*--------Login Page---------*/
 #loginPage {
-    display: none;
+    
 }
 
 .login-container {
@@ -162,7 +162,7 @@ input[type=text]:focus {
 /*-------------------------*/
 /*--------Chat--------*/
 #chat {
-    
+    display: none;
 }
 /*--------Chat container & Messages--------*/
 .chat-container {
@@ -246,7 +246,7 @@ input[type=text]:focus {
 /*-------------------------*/
 /*--------Ending 2--------*/
 
-.ending2 {
+#ending2 {
    display: none;
 }
 
@@ -272,48 +272,14 @@ input[type=text]:focus {
     background-color: partial.$fourth-color;
 }
 /*-------------------------*/
+/*-------------------------*/
 /*--------Ending 3--------*/
 
 #ending3 {
     display: none;
-}
-
-.ending3-container {
-    @include partial.standardbg;
-    
-    min-height: 66svh;
-   
-    h1 {
-        margin-top: -20px;
-    }
-
-    h2 {
-        margin-top: -30px;
-    }
-}
-
-.advice3 {
-    text-align: center;
-}
-
-/*--------Ending 3 btn--------*/
-#logoff1btn {
-    @include partial.standardbtn;
-    
-    margin-left: 26px;
-}
-
-#logoff1btn:hover {
-    background-color: partial.$fourth-color;
-    color: white;
-}
-/*-------------------------*/
-/*--------Ending 4--------*/
-#ending4 {
-    display: none;
  }
  
-.ending4-container {
+.ending3-container {
      @include partial.standardbg;
     
      min-height: 70svh;
@@ -327,20 +293,56 @@ input[type=text]:focus {
      }
  }
  
- .advice4 {
+ .advice3 {
      text-align: center;
  }
  
- /*--------Ending 4 btn--------*/
- #logoff2btn {
+ /*--------Ending 3 btn--------*/
+ #logoff1btn {
      @include partial.standardbtn;
      margin-left: 26px;
  }
 
-#logoff2btn:hover {
+#logoff1btn:hover {
     background-color: partial.$fourth-color;
     color: white;
 } 
+
+/*--------Ending 4--------*/
+
+#ending4 {
+    display: none;
+}
+
+.ending4-container {
+    @include partial.standardbg;
+    
+    min-height: 66svh;
+   
+    h1 {
+        margin-top: -20px;
+    }
+
+    h2 {
+        margin-top: -30px;
+    }
+}
+
+.advice4 {
+    text-align: center;
+}
+
+/*--------Ending 4 btn--------*/
+#logoff2btn {
+    @include partial.standardbtn;
+    
+    margin-left: 26px;
+}
+
+#logoff2btn:hover {
+    background-color: partial.$fourth-color;
+    color: white;
+}
 /*-------------------------*/
 /*--------Infografi--------*/
 #infografi {

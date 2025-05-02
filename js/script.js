@@ -53,23 +53,98 @@ loginBtn.addEventListener("click", () => {
 
 /*-------------Chat--------------*/
 /*--------Answerbtn1---------*/
+const answer1btn = document.getElementById ("answer1btn");
+const ending1 = document.getElementById ("ending1");
+
+answer1btn.addEventListener("click", () => {
+
+    if (chat.style.display !== "none") {
+        chat.style.display = "none";
+        ending1.style.display = "block";
+      
+    };
+})
 
 /*--------Answerbtn2---------*/
+const answer2btn = document.getElementById ("answer2btn");
+const ending2 = document.getElementById ("ending2");
+
+answer2btn.addEventListener("click", () => {
+
+    if (chat.style.display !== "none") {
+        chat.style.display = "none";
+        ending2.style.display = "block";
+      
+    };
+})
 
 /*--------Answerbtn3---------*/
+const answer3btn = document.getElementById ("answer3btn");
+const ending3 = document.getElementById ("ending3");
+
+answer3btn.addEventListener("click", () => {
+
+    if (chat.style.display !== "none") {
+        chat.style.display = "none";
+        ending3.style.display = "block";
+      
+    };
+})
 
 /*-------------Ending 1--------------*/
 /*--------warningbtn---------*/
+const warningbtn = document.getElementById ("warningbtn");
+const infografi = document.getElementById ("infografi");
+
+warningbtn.addEventListener("click", () => {
+
+    if (ending1.style.display !== "none") {
+        ending1.style.display = "none";
+        infografi.style.display = "block";
+      
+    };
+})
 
 /*-------------Ending 2--------------*/
 /*--------errorbtn---------*/
+const errorbtn = document.getElementById ("errorbtn");
+
+errorbtn.addEventListener("click", () => {
+
+    if (ending2.style.display !== "none") {
+        ending2.style.display = "none";
+        infografi.style.display = "block";
+      
+    };
+})
 
 /*-------------Ending 3--------------*/
 /*--------logoff1btn---------*/
+const logoff1btn = document.getElementById ("logoff1btn");
+
+logoff1btn.addEventListener("click", () => {
+
+    if (ending3.style.display !== "none") {
+        ending3.style.display = "none";
+        infografi.style.display = "block";
+      
+    };
+})
 
 /*-------------Ending 4--------------*/
 /*--------logoff2btn---------*/
+const logoff2btn = document.getElementById ("logoff2btn");
 
+logoff2btn.addEventListener("click", () => {
+
+    if (ending4.style.display !== "none") {
+        ending4.style.display = "none";
+        infografi.style.display = "block";
+      
+    };
+})
 
 /*-------------Infografi--------------*/
 /*--------collapsible---------*/
+
+/*--------Return To Start btn---------*/
