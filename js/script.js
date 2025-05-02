@@ -1,6 +1,10 @@
 'use strict';
 
-/*--------Profilbillede---------*/
+/*-------------Login Page--------------*/
+/*--------Brugernavn Felt---------*/
+
+
+/*--------Profilbillede Valg---------*/
 const avatars = document.querySelectorAll('#avatars img');
 
 avatars.forEach(avatar => {
@@ -10,6 +14,8 @@ const selectAvatar = (e) => {
     let avatarSelected = e.target.src;
     console.log(avatarSelected)
 }
+
+/*--------Baggrundsbillede Valg---------*/
 
 /*--------Login btn---------*/
 const loginbtn = document.querySelector
