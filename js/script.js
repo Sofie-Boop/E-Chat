@@ -4,9 +4,6 @@
 
 
 /*-------------Login Page--------------*/
-/*--------Brugernavn Felt---------*/
-
-
 /*--------Avatar Valg---------*/
 const avatars = document.querySelectorAll('#avatars img');
 let avatarSelected;
@@ -32,8 +29,7 @@ avatars.forEach(avatar => {
 bgs.forEach (bg => {
     bg.addEventListener ('click', selectbg)})
 
-/*-------------Chat--------------*/
-/*--------Avatar ikon---------*/
+/*--------Avatar ikon & Brugernavn---------*/
 const user = document.getElementById ("user");
 const userName = document.getElementById ("userName");
 const customiseUI = () => {
@@ -57,14 +53,11 @@ loginBtn.addEventListener("click", () => {
     };
 })
 
+/*--------Chat - answerbtn1---------*/
 
-/*--------Brugernavn placering---------*/
+/*--------Chat - answerbtn2---------*/
 
-/*--------answerbtn1---------*/
-
-/*--------answerbtn2---------*/
-
-/*--------answerbtn3---------*/
+/*--------Chat - answerbtn3---------*/
 
 /*-------------Ending 1--------------*/
 /*--------warningbtn---------*/
