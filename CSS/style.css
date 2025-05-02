@@ -20,6 +20,8 @@
 /*--------Knapper---------*/
 /*-------------------------*/
 /*--------Desktop Knapper---------*/
+/*-------------------------*/
+/*--------Collapsbiles---------*/
 /*--------General Styling---------*/
 body {
   margin: 0;
@@ -501,6 +503,64 @@ input[type=text]:focus {
 
 /*-------------------------*/
 /*--------Infografi--------*/
+/*--------Collapsibles--------*/
+.collapsible {
+  font-family: "Coiny", system-ui;
+  background-color: #AA64D8;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  position: relative;
+}
+
+.active, .collapsible:hover {
+  background-color: #BCB0D4;
+}
+
+.content {
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #AA64D8;
+}
+.content p {
+  font-size: 16px;
+}
+
+.collapsible:after {
+  content: "➕"; /* Unicode character for "plus" sign (+) */
+  font-size: 16px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "➖"; /* Unicode character for "minus" sign (-) */
+}
+
+/*--------End Chat History btn--------*/
+#endchathistorybtn {
+  font-family: "Coiny", system-ui;
+  position: relative;
+  background-color: #AA64D8;
+  color: white;
+  font-size: 20px;
+  padding: 16px 80px;
+  margin-left: 35px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  text-align: center;
+}
+
 /*-------------------------*/
 /*--------Mobil Footer---------*/
 .mobilfooter {

@@ -348,6 +348,34 @@ input[type=text]:focus {
 #infografi {
     
 }
+/*--------Collapsibles--------*/
+.collapsible {
+    @include partial.collapsibles;
+}
+
+.active, .collapsible:hover {
+    background-color: partial.$fourth-color;
+}
+.content {
+    @include partial.content;
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 16px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/*--------End Chat History btn--------*/
+#endchathistorybtn {
+    @include partial.standardbtn;
+}
 
 /*-------------------------*/
 /*--------Mobil Footer---------*/
