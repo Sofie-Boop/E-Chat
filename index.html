@@ -17,7 +17,7 @@
 </head>
 <body>
     <main>
-        <section class="login-page">
+        <section id="loginPage">
             <div class="login-container">
                 <div class="welcome-window">
                     <h1 class="heading1">Welcome To E-Chat</h1>
@@ -31,7 +31,7 @@
 
                 <div class="picturebox">
                     <h3 class="heading3">Pick An Avatar:</h3>
-                    <div ID="avatars">
+                    <div id="avatars">
                         <div class="row1">
                             <img class="avatar" src="img/avatar1.png" alt="Sleeping dog">
                             <img class="avatar" src="img/avatar2.png" alt="Duck holding a knife">
@@ -45,7 +45,7 @@
                     </div>
 
                     <h3 class="heading4">Pick A Background:</h3>
-                    <div ID="backgrounds">
+                    <div id="bg">
                         <div class="row3">
                             <img class="background1" src="img/background1.png" alt="Night sky">
                             <img class="background2" src="img/background2.png" alt="Room with a desk and computer overlooking the city">
@@ -59,14 +59,14 @@
                     </div>
                 </div>
 
-                <div class="LoginButton">
-                    <button ID="loginbtn" aria-label="Logs into E-Chat">Log In</button>
+                <div class="loginbutton">
+                    <button id="loginBtn" aria-label="Logs into E-Chat">Log In</button>
                 </div>
 
             </div>
         </section>
 
-        <section class="chat">
+        <section id="chat">
             <div class="chat-container">
                 <div class="chatinfo-container">
                     <h1>E-chat Message</h1>
@@ -91,11 +91,11 @@
                     <div class="message-container3">
                         <img class="dot" src="img/dot.png" alt="Three dots on a line">
                     </div>
-                        <img class="user" src="img/profilbillede3.png" alt="user chossen profile picture">
+                        <img id="user" src="img/avatar3.png" alt="user chossen profile picture">
                 </div>
 
                 <div class="answer-container">
-                    <h2>(User Name)</h2>
+                    <h2 id="userName">(User Name)</h2>
                     <h3>Reply Options:</h3>
                     <div class="answerbtns">
                         <button class="answer1btn" aria-label="Answer: Click on link to message">Click On Link</button>

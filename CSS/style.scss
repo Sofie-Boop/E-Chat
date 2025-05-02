@@ -6,6 +6,8 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Fira Sans", sans-serif;
+    background-image: url(../img/background1.png);
+    background-size: cover;
 }
   
 h1, h2, h3, h4, h5, h6 {
@@ -47,8 +49,8 @@ a {
 /*----------------------------------------*/
 
 /*-------------Mobil Styling--------------*/
-/*--------Login-box---------*/
-.login-page {
+/*--------Login Page---------*/
+#loginPage {
     
 }
 
@@ -138,17 +140,17 @@ input[type=text]:focus {
 }
 
 /*--------Login Button--------*/
-#loginbtn {
+#loginBtn {
   @include partial.standardbtn;
 }
 
-#loginbtn:hover {
+#loginBtn:hover {
     background-color: partial.$fourth-color;
     color: white;
 }
 /*-------------------------*/
 /*--------Chat--------*/
-.chat {
+#chat {
     display: none;
 }
 /*--------Chat container & Messages--------*/
@@ -407,7 +409,7 @@ input[type=text]:focus {
     }
 
     /*--------Login Button---------*/
-    #loginbtn {
+    #loginBtn {
         @include partial.desktopstandardbtn
     }
 
@@ -415,6 +417,7 @@ input[type=text]:focus {
 
     /*--------Chatbox--------*/
     /*--------Chat container & Messages--------*/
+    
     .chat-container {
         @include partial.desktopstandardbg;
         min-height: 245svh;

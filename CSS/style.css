@@ -26,6 +26,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Fira Sans", sans-serif;
+  background-image: url(../img/background1.png);
+  background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -66,7 +68,7 @@ a {
 
 /*----------------------------------------*/
 /*-------------Mobil Styling--------------*/
-/*--------Login-box---------*/
+/*--------Login Page---------*/
 .login-container {
   background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
   color: white;
@@ -170,7 +172,7 @@ input[type=text]:focus {
 }
 
 /*--------Login Button--------*/
-#loginbtn {
+#loginBtn {
   font-family: "Coiny", system-ui;
   position: relative;
   background-color: #AA64D8;
@@ -184,14 +186,14 @@ input[type=text]:focus {
   text-align: center;
 }
 
-#loginbtn:hover {
+#loginBtn:hover {
   background-color: #BCB0D4;
   color: white;
 }
 
 /*-------------------------*/
-/*--------Chatbox--------*/
-.chatbox {
+/*--------Chat--------*/
+#chat {
   display: none;
 }
 
@@ -573,7 +575,7 @@ input[type=text]:focus {
     margin-bottom: 50px;
   }
   /*--------Login Button---------*/
-  #loginbtn {
+  #loginBtn {
     font-family: "Coiny", system-ui;
     position: relative;
     background-color: #AA64D8;
