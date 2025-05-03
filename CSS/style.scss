@@ -51,7 +51,7 @@ a {
 /*-------------Mobil Styling--------------*/
 /*--------Login Page---------*/
 #loginPage {
-    
+    display: none;
 }
 
 .login-container {
@@ -167,12 +167,16 @@ input:user-invalid, textarea:user-invalid {
     color: white;
 }
 /*-------------------------*/
-/*--------Chat--------*/
+/*--------Chat & Chat pt2--------*/
 #chat {
     display: none;
 }
+
+#chatpt2 {
+   
+}
 /*--------Chat container & Messages--------*/
-.chat-container {
+.chat-container, .chat-container2 {
     @include partial.standardbg;
 
     img {
@@ -186,7 +190,7 @@ input:user-invalid, textarea:user-invalid {
 }
 
 /*--------Chatinfo container--------*/
-.chatinfo-container {
+.chatinfo-container, .chatinfo-container2 {
     background: partial.$primary-gradient;
     border-radius: 30px;
         
@@ -195,19 +199,19 @@ input:user-invalid, textarea:user-invalid {
         }
 }
 /*--------Messages--------*/
-.message-container1, .message-container2, .message-container3 {
+.message-container1, .message-container2, .message-container3, .message-container4, .message-container5, .message-container6 {
    @include partial.messagecontainer;
 }
 
-.chatmessage1, .chatmessage2, .chatmessage3 {
+.chatmessage1, .chatmessage2, .chatmessage3, .chatmessage4, .chatmessage5, .chatmessage6{
     display: flex;
 }
 
 /*--------Answer Container--------*/
-.answer-container {
+.answer-container, .answer-container2 {
     background-color: partial.$fifth-color;
     border-radius: partial.$border-radius  partial.$border-radius partial.$border-radius partial.$border-radius;
-    min-height: 55svh;
+    min-height: 60svh;
 
     h2, h3 {
         color: partial.$tertiary-color;
@@ -219,16 +223,15 @@ input:user-invalid, textarea:user-invalid {
 }
 
 /*--------Answer Buttons--------*/
-#answer1btn, #answer2btn, #answer3btn {
+#answer1btn, #answer2btn, #answer3btn, #answer4btn, #answer5btn, #answer6btn {
     @include partial.answerbtn;
     
 }
 
-#answer1btn:hover, #answer2btn:hover, #answer3btn:hover {
+#answer1btn:hover, #answer2btn:hover, #answer3btn:hover, #answer4btn:hover, #answer5btn:hover, #answer6btn:hover {
     background-color: partial.$fourth-color;
     color: white;
 }
-
 
 /*-------------------------*/
 /*--------Ending 1--------*/

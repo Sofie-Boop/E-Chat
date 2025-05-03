@@ -73,6 +73,10 @@ a {
 /*----------------------------------------*/
 /*-------------Mobil Styling--------------*/
 /*--------Login Page---------*/
+#loginPage {
+  display: none;
+}
+
 .login-container {
   background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
   color: white;
@@ -210,13 +214,13 @@ input:user-invalid, textarea:user-invalid {
 }
 
 /*-------------------------*/
-/*--------Chat--------*/
+/*--------Chat & Chat pt2--------*/
 #chat {
   display: none;
 }
 
 /*--------Chat container & Messages--------*/
-.chat-container {
+.chat-container, .chat-container2 {
   background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
   color: white;
   border-radius: 20px 20px 20px 20px;
@@ -228,7 +232,7 @@ input:user-invalid, textarea:user-invalid {
   padding: 20px;
   margin-bottom: 15px;
 }
-.chat-container img {
+.chat-container img, .chat-container2 img {
   max-width: 30%;
   align-self: end;
 }
@@ -239,16 +243,16 @@ input:user-invalid, textarea:user-invalid {
 }
 
 /*--------Chatinfo container--------*/
-.chatinfo-container {
+.chatinfo-container, .chatinfo-container2 {
   background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
   border-radius: 30px;
 }
-.chatinfo-container h2 {
+.chatinfo-container h2, .chatinfo-container2 h2 {
   margin-top: -50px;
 }
 
 /*--------Messages--------*/
-.message-container1, .message-container2, .message-container3 {
+.message-container1, .message-container2, .message-container3, .message-container4, .message-container5, .message-container6 {
   background-color: #FFFFFF;
   color: black;
   border-radius: 20px 20px 20px 20px;
@@ -257,25 +261,25 @@ input:user-invalid, textarea:user-invalid {
   margin-bottom: 25px;
 }
 
-.chatmessage1, .chatmessage2, .chatmessage3 {
+.chatmessage1, .chatmessage2, .chatmessage3, .chatmessage4, .chatmessage5, .chatmessage6 {
   display: flex;
 }
 
 /*--------Answer Container--------*/
-.answer-container {
+.answer-container, .answer-container2 {
   background-color: #FFFFFF;
   border-radius: 20px 20px 20px 20px;
-  min-height: 55svh;
+  min-height: 60svh;
 }
-.answer-container h2, .answer-container h3 {
+.answer-container h2, .answer-container h3, .answer-container2 h2, .answer-container2 h3 {
   color: #6EBDFF;
 }
-.answer-container h3 {
+.answer-container h3, .answer-container2 h3 {
   margin-bottom: 30px;
 }
 
 /*--------Answer Buttons--------*/
-#answer1btn, #answer2btn, #answer3btn {
+#answer1btn, #answer2btn, #answer3btn, #answer4btn, #answer5btn, #answer6btn {
   font-family: "Coiny", system-ui;
   font-size: 18px;
   background-color: #AA64D8;
@@ -292,7 +296,7 @@ input:user-invalid, textarea:user-invalid {
   margin-right: 5px;
 }
 
-#answer1btn:hover, #answer2btn:hover, #answer3btn:hover {
+#answer1btn:hover, #answer2btn:hover, #answer3btn:hover, #answer4btn:hover, #answer5btn:hover, #answer6btn:hover {
   background-color: #BCB0D4;
   color: white;
 }

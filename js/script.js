@@ -67,13 +67,13 @@ answer1btn.addEventListener("click", () => {
 
 /*--------Answerbtn2---------*/
 const answer2btn = document.getElementById ("answer2btn");
-const ending2 = document.getElementById ("ending2");
+const chatpt2 = document.getElementById ("chatpt2");
 
 answer2btn.addEventListener("click", () => {
 
     if (chat.style.display !== "none") {
         chat.style.display = "none";
-        ending2.style.display = "block";
+        chatpt2.style.display = "block";
       
     };
 })
@@ -87,6 +87,44 @@ answer3btn.addEventListener("click", () => {
     if (chat.style.display !== "none") {
         chat.style.display = "none";
         ending3.style.display = "block";
+      
+    };
+})
+
+/*-------------Chat Pt 2--------------*/
+/*--------Answerbtn4---------*/
+const answer4btn = document.getElementById ("answer4btn");
+const ending2 = document.getElementById ("ending2")
+
+answer4btn.addEventListener("click", () => {
+
+    if (chatpt2.style.display !== "none") {
+        chatpt2.style.display = "none";
+        ending2.style.display = "block";
+      
+    };
+})
+
+/*--------Answerbtn5---------*/
+const answer5btn = document.getElementById ("answer5btn");
+
+answer5btn.addEventListener("click", () => {
+
+    if (chatpt2.style.display !== "none") {
+        chatpt2.style.display = "none";
+        ending1.style.display = "block";
+      
+    };
+})
+
+/*--------Answerbtn6---------*/
+const answer6btn = document.getElementById ("answer6btn");
+
+answer6btn.addEventListener("click", () => {
+
+    if (chatpt2.style.display !== "none") {
+        chatpt2.style.display = "none";
+        ending4.style.display = "block";
       
     };
 })
