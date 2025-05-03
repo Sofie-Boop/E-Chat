@@ -378,11 +378,38 @@ input[type=text]:focus {
     @include partial.infoboxwhite;
 }
 
-/*--------info-container 2 & row 5-8--------*/
+/*--------Info-container 2 & row 5-8--------*/
 .info2-container {
     @include partial.infoboxpurple;
 }
 
+/*--------Info Heading 1 Container--------*/
+.infoheading1-container {
+    @include partial.introcontainer;
+}
+
+/*--------Info-container 3 & row 9-11--------*/
+.info3-container {
+    @include partial.infoboxwhite;
+}
+
+/*--------info-container 4 & infbox 3 & 4--------*/
+.info4-container {
+    
+}
+
+.infobox3 {
+    @include partial.infoboxpurple;
+}
+
+.infobox4 {
+    @include partial.infoboxwhite;
+}
+
+/*--------Info Heading 2 Container--------*/
+.infoheading2-container {
+    @include partial.introcontainer;
+}
 
 /*--------Collapsibles--------*/
 .collapsible {

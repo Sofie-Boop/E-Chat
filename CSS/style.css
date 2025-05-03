@@ -525,7 +525,7 @@ input[type=text]:focus {
 }
 
 .intro-container {
-  background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
+  background: linear-gradient(to right, #AA64D8, #F7A3DF, #6EBDFF);
   border-radius: 30px;
   display: flex;
 }
@@ -544,13 +544,59 @@ input[type=text]:focus {
   border-radius: 30px;
   text-align: center;
 }
+.infobox2 h2 {
+  color: black;
+}
 
-/*--------info-container 2 & row 5-8--------*/
+/*--------Info-container 2 & row 5-8--------*/
 .info2-container {
   background: #BCB0D4;
   color: #FFFFFF;
   border-radius: 30px;
   text-align: center;
+}
+
+/*--------Info Heading 1 Container--------*/
+.infoheading1-container {
+  background: linear-gradient(to right, #AA64D8, #F7A3DF, #6EBDFF);
+  border-radius: 30px;
+  display: flex;
+}
+
+/*--------Info-container 3 & row 9-11--------*/
+.info3-container {
+  background: #FFFFFF;
+  color: black;
+  border-radius: 30px;
+  text-align: center;
+}
+.info3-container h2 {
+  color: black;
+}
+
+/*--------info-container 4 & infbox 3 & 4--------*/
+.infobox3 {
+  background: #BCB0D4;
+  color: #FFFFFF;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.infobox4 {
+  background: #FFFFFF;
+  color: black;
+  border-radius: 30px;
+  text-align: center;
+}
+.infobox4 h2 {
+  color: black;
+}
+
+/*--------Info Heading 2 Container--------*/
+.infoheading2-container {
+  background: linear-gradient(to right, #AA64D8, #F7A3DF, #6EBDFF);
+  border-radius: 30px;
+  display: flex;
 }
 
 /*--------Collapsibles--------*/

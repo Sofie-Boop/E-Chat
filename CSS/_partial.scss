@@ -5,6 +5,7 @@ $tertiary-color: #6EBDFF;
 $fourth-color: #BCB0D4;
 $fifth-color: #FFFFFF;
 $primary-gradient: linear-gradient($primary-color, $secondary-color, $tertiary-color);
+$secondary-gradient: linear-gradient(to right, $primary-color, $secondary-color, $tertiary-color);
 $error-bg: linear-gradient(#FBB394, #5A3572);
 $error-color: #E51518;
 $loading-bg: linear-gradient(#AA64D8, #5A3572);
@@ -257,7 +258,7 @@ $border-radius2: 50px;
 /*--------Infografi box containers---------*/
 
 @mixin introcontainer {
-    background: $primary-gradient;
+    background: $secondary-gradient;
     border-radius: 30px;
     display: flex;
 }
@@ -274,6 +275,10 @@ $border-radius2: 50px;
     color: black;
     border-radius: 30px;
     text-align: center;
+
+    h2 {
+        color: black;
+    }
 }
 
 
