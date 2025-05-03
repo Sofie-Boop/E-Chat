@@ -221,15 +221,25 @@ input[type=text]:focus {
     background-color: partial.$fourth-color;
     color: white;
 }
+
+
 /*-------------------------*/
 /*--------Ending 1--------*/
 
 #ending1 {
-   display: none; 
+    display: none;
 }
 
 .ending1-container {
     @include partial.badbg;
+
+    img {
+       max-width: 40%;
+    }
+}
+
+.introduction1 {
+    display: flex;
 }
 
 .advice1 {
@@ -243,20 +253,26 @@ input[type=text]:focus {
 #warningbtn:hover {
     background-color: partial.$fourth-color;
 }
+
+
 /*-------------------------*/
 /*--------Ending 2--------*/
 
 #ending2 {
-   display: none;
+    
 }
 
 .ending2-container {
     @include partial.badbg;
     min-height: 52svh;
 
-    h1 {
-        margin-right: 50px;
-    }
+    img {
+        max-width: 40%;
+     }
+}
+
+.introduction2 {
+    display: flex;
 }
 
 .advice2 {
@@ -271,7 +287,8 @@ input[type=text]:focus {
 #errorbtn:hover {
     background-color: partial.$fourth-color;
 }
-/*-------------------------*/
+
+
 /*-------------------------*/
 /*--------Ending 3--------*/
 
@@ -308,6 +325,7 @@ input[type=text]:focus {
     color: white;
 } 
 
+
 /*--------Ending 4--------*/
 
 #ending4 {
@@ -343,10 +361,12 @@ input[type=text]:focus {
     background-color: partial.$fourth-color;
     color: white;
 }
+
+
 /*-------------------------*/
 /*--------Infografi--------*/
 #infografi {
-    
+    display: none;
 }
 
 .infografi-container {
@@ -380,11 +400,16 @@ input[type=text]:focus {
 
 .infobox2 {
     @include partial.infoboxwhite;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 /*--------Info-container 2 & row 5-8--------*/
 .info2-container {
     @include partial.infoboxpurple;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 15px;
 }
 
 /*--------Info Heading 1 Container--------*/
@@ -556,6 +581,11 @@ input[type=text]:focus {
     /*--------Ending 1--------*/
     .ending1-container {
         @include partial.desktopbadbg;
+
+        h1 {
+            margin-left: 100px;
+            margin-top: 70px;
+        }
     }
 
     /*--------Ending 1 btn--------*/
@@ -570,7 +600,8 @@ input[type=text]:focus {
        min-height: 70svh;
 
        h1 {
-        margin-right: 295px;
+        margin-left: 100px;
+        margin-top: 70px;
        }
     }
 
