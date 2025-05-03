@@ -51,7 +51,7 @@ a {
 /*-------------Mobil Styling--------------*/
 /*--------Login Page---------*/
 #loginPage {
-    display: none;
+    
 }
 
 .login-container {
@@ -116,6 +116,13 @@ input[type=text]:focus {
 
 ::placeholder {
    color: partial.$fifth-color;
+}
+
+input:user-valid, textarea:user-valid {
+    border: 4px solid green;
+} 
+input:user-invalid, textarea:user-invalid {
+    border: 4px solid red;
 }
 
 /*--------Profil & Background Images--------*/
@@ -259,7 +266,7 @@ input[type=text]:focus {
 /*--------Ending 2--------*/
 
 #ending2 {
-    
+    display: none;
 }
 
 .ending2-container {
