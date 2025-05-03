@@ -85,6 +85,18 @@ $border-radius2: 50px;
         margin-bottom: -5px;
     }
 }
+
+@mixin infografibg {
+    border-radius: $border-radius  $border-radius $border-radius  $border-radius;
+    margin: auto;
+    margin-top: 30px;
+    width: 100svw; /* 100% indtil max-width nås */
+    max-width: 280px;
+    min-height: 80svh;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
 /*-------------------------*/
 /*--------Desktop Container---------*/
 @mixin desktopstandardbg {
@@ -240,6 +252,30 @@ $border-radius2: 50px;
     margin-left: 15px;
     margin-right: 15px;
 }
+
+/*-------------------------*/
+/*--------Infografi box containers---------*/
+
+@mixin introcontainer {
+    background: $primary-gradient;
+    border-radius: 30px;
+    display: flex;
+}
+
+@mixin infoboxpurple {
+    background: $fourth-color;
+    color: $fifth-color;
+    border-radius: 30px;
+    text-align: center;
+}
+
+@mixin infoboxwhite {
+    background: $fifth-color;
+    color: black;
+    border-radius: 30px;
+    text-align: center;
+}
+
 
 /*-------------------------*/
 /*--------Collapsbiles---------*/

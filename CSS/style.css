@@ -21,6 +21,8 @@
 /*-------------------------*/
 /*--------Desktop Knapper---------*/
 /*-------------------------*/
+/*--------Infografi box containers---------*/
+/*-------------------------*/
 /*--------Collapsbiles---------*/
 /*--------General Styling---------*/
 body {
@@ -234,7 +236,7 @@ input[type=text]:focus {
 
 /*--------Chatinfo container--------*/
 .chatinfo-container {
-  background: linear-gradient(#F7A3DF, #6EBDFF);
+  background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
   border-radius: 30px;
 }
 .chatinfo-container h2 {
@@ -503,6 +505,54 @@ input[type=text]:focus {
 
 /*-------------------------*/
 /*--------Infografi--------*/
+.infografi-container {
+  border-radius: 20px 20px 20px 20px;
+  margin: auto;
+  margin-top: 30px;
+  width: 100svw; /* 100% indtil max-width nås */
+  max-width: 280px;
+  min-height: 80svh;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.emoji1, .emoji2, .emoji3, .emoji4, .emjoji5 {
+  max-width: 30%;
+}
+
+.infographic1, .infographic2, .infographic3, .infographic4, .infographic5, .infographic6 {
+  max-width: 60%;
+}
+
+.intro-container {
+  background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
+  border-radius: 30px;
+  display: flex;
+}
+
+/*--------info-container 1 & infbox 1 & 2--------*/
+.infobox1 {
+  background: #BCB0D4;
+  color: #FFFFFF;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.infobox2 {
+  background: #FFFFFF;
+  color: black;
+  border-radius: 30px;
+  text-align: center;
+}
+
+/*--------info-container 2 & row 5-8--------*/
+.info2-container {
+  background: #BCB0D4;
+  color: #FFFFFF;
+  border-radius: 30px;
+  text-align: center;
+}
+
 /*--------Collapsibles--------*/
 .collapsible {
   font-family: "Coiny", system-ui;
@@ -559,6 +609,7 @@ input[type=text]:focus {
   cursor: pointer;
   border-radius: 30px;
   text-align: center;
+  padding: 20px 30px;
 }
 
 /*-------------------------*/

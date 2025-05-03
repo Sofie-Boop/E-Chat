@@ -180,7 +180,7 @@ input[type=text]:focus {
 
 /*--------Chatinfo container--------*/
 .chatinfo-container {
-    background: linear-gradient(partial.$secondary-color, partial.$tertiary-color);
+    background: partial.$primary-gradient;
     border-radius: 30px;
         
         h2 {
@@ -348,6 +348,42 @@ input[type=text]:focus {
 #infografi {
     
 }
+
+.infografi-container {
+    @include partial.infografibg;
+}
+
+.emoji1, .emoji2, .emoji3, .emoji4, .emjoji5 {
+    max-width: 30%;
+}
+
+.infographic1, .infographic2, .infographic3, .infographic4, .infographic5, .infographic6 {
+    max-width: 60%;
+}
+
+.intro-container {
+    @include partial.introcontainer;
+}
+
+/*--------info-container 1 & infbox 1 & 2--------*/
+.info1-container {
+    
+}
+
+.infobox1 {
+    @include partial.infoboxpurple;
+}
+
+.infobox2 {
+    @include partial.infoboxwhite;
+}
+
+/*--------info-container 2 & row 5-8--------*/
+.info2-container {
+    @include partial.infoboxpurple;
+}
+
+
 /*--------Collapsibles--------*/
 .collapsible {
     @include partial.collapsibles;
@@ -375,6 +411,7 @@ input[type=text]:focus {
 /*--------End Chat History btn--------*/
 #endchathistorybtn {
     @include partial.standardbtn;
+    padding: 20px 30px;
 }
 
 /*-------------------------*/
