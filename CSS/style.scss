@@ -580,7 +580,7 @@ input:user-invalid, textarea:user-invalid {
 
     /*--------Messages--------*/
     .message-container1, .message-container2, .message-container3, .message-container4, .message-container5, .message-container6 {
-        @include partial.desktopmessagecontainer
+        @include partial.desktopmessagecontainer;
     }
 
     /*--------Answer Container--------*/
