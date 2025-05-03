@@ -568,23 +568,28 @@ input:user-invalid, textarea:user-invalid {
         min-height: 245svh;
     }
 
+    .chat-container2 {
+        @include partial.desktopstandardbg;
+        min-height: 225svh;
+    }
+
     /*--------Chatinfo container--------*/
-    .chatinfo-container {
+    .chatinfo-container, .chatinfo-container2 {
         border-radius: partial.$border-radius2, partial.$border-radius2, partial.$border-radius2, partial.$border-radius2;
     }
 
     /*--------Messages--------*/
-    .message-container1, .message-container2, .message-container3 {
+    .message-container1, .message-container2, .message-container3, .message-container4, .message-container5, .message-container6 {
         @include partial.desktopmessagecontainer
     }
 
     /*--------Answer Container--------*/
-    .answer-container {
+    .answer-container, .answer-container2 {
         min-height: 90svh;
     }
 
     /*--------Answer Buttons--------*/
-    #answer1btn, #answer2btn, #answer3btn {
+    #answer1btn, #answer2btn, #answer3btn, #answer4btn, #answer5btn, #answer6btn {
         @include partial.desktopanswerbtn
     }
 

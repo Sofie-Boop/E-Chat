@@ -789,12 +789,25 @@ input:user-invalid, textarea:user-invalid {
     margin-bottom: 35px;
     min-height: 245svh;
   }
+  .chat-container2 {
+    background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
+    color: white;
+    border-radius: 50px 50px 50px 50px;
+    margin: auto;
+    margin-top: 30px;
+    width: 100svw; /* 100% indtil max-width nås */
+    max-width: 800px;
+    min-height: 280svh;
+    padding: 20px;
+    margin-bottom: 35px;
+    min-height: 225svh;
+  }
   /*--------Chatinfo container--------*/
-  .chatinfo-container {
+  .chatinfo-container, .chatinfo-container2 {
     border-radius: 50px, 50px, 50px, 50px;
   }
   /*--------Messages--------*/
-  .message-container1, .message-container2, .message-container3 {
+  .message-container1, .message-container2, .message-container3, .message-container4, .message-container5, .message-container6 {
     background-color: #FFFFFF;
     color: black;
     border-radius: 50px 50px 50px 50px;
@@ -803,11 +816,11 @@ input:user-invalid, textarea:user-invalid {
     margin-bottom: 25px;
   }
   /*--------Answer Container--------*/
-  .answer-container {
+  .answer-container, .answer-container2 {
     min-height: 90svh;
   }
   /*--------Answer Buttons--------*/
-  #answer1btn, #answer2btn, #answer3btn {
+  #answer1btn, #answer2btn, #answer3btn, #answer4btn, #answer5btn, #answer6btn {
     font-family: "Coiny", system-ui;
     position: relative;
     background-color: #AA64D8;
