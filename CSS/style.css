@@ -516,8 +516,12 @@ input[type=text]:focus {
   margin-bottom: 15px;
 }
 
-.emoji1, .emoji2, .emoji3, .emoji4, .emjoji5 {
+.emoji1, .emoji2, .emoji4, .emjoji5 {
   max-width: 30%;
+}
+
+.emoji3 {
+  max-width: 50%;
 }
 
 .infographic1, .infographic2, .infographic3, .infographic4, .infographic5, .infographic6 {
@@ -528,6 +532,8 @@ input[type=text]:focus {
   background: linear-gradient(to right, #AA64D8, #F7A3DF, #6EBDFF);
   border-radius: 30px;
   display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 /*--------info-container 1 & infbox 1 & 2--------*/
@@ -561,6 +567,8 @@ input[type=text]:focus {
   background: linear-gradient(to right, #AA64D8, #F7A3DF, #6EBDFF);
   border-radius: 30px;
   display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 /*--------Info-container 3 & row 9-11--------*/
@@ -597,6 +605,8 @@ input[type=text]:focus {
   background: linear-gradient(to right, #AA64D8, #F7A3DF, #6EBDFF);
   border-radius: 30px;
   display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 /*--------Collapsibles--------*/
@@ -656,6 +666,7 @@ input[type=text]:focus {
   border-radius: 30px;
   text-align: center;
   padding: 20px 30px;
+  margin-top: 30px;
 }
 
 /*-------------------------*/
@@ -943,6 +954,34 @@ input[type=text]:focus {
     cursor: pointer;
     border-radius: 50px;
     text-align: center;
+  }
+  /*-------------------------*/
+  /*--------Dekstop Infografi---------*/
+  .infografi-container {
+    color: white;
+    border-radius: 50px 50px 50px 50px;
+    margin: auto;
+    margin-top: 30px;
+    width: 100svw; /* 100% indtil max-width nås */
+    max-width: 800px;
+    min-height: 280svh;
+    padding: 20px;
+    margin-bottom: 35px;
+  }
+  /*--------End Chat History btn--------*/
+  #endchathistorybtn {
+    font-family: "Coiny", system-ui;
+    position: relative;
+    background-color: #AA64D8;
+    color: white;
+    font-size: 20px;
+    padding: 28px 150px;
+    margin-left: 220px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 50px;
   }
   /*-------------------------*/
   /*--------Mobil Footer---------*/

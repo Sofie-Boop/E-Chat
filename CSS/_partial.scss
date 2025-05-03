@@ -142,6 +142,18 @@ $border-radius2: 50px;
         margin-top: 10px;
     }
 }
+
+@mixin desktopinfografibg {
+    color: white;
+    border-radius: $border-radius2  $border-radius2 $border-radius2  $border-radius2;
+    margin: auto;
+    margin-top: 30px;
+    width: 100svw; /* 100% indtil max-width nås */
+    max-width: 800px;
+    min-height: 280svh;
+    padding: 20px;
+    margin-bottom: 35px;
+}
 /*-------------------------*/
 /*--------Message Baggrund---------*/
 @mixin messagecontainer {
@@ -261,6 +273,8 @@ $border-radius2: 50px;
     background: $secondary-gradient;
     border-radius: 30px;
     display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 @mixin infoboxpurple {
