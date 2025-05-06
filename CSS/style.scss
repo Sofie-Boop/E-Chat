@@ -154,8 +154,16 @@ input:user-invalid, textarea:user-invalid {
     border: 3px soild partial.$fourth-color
 
 }
+/* Style the selected avatar & bg */
+#avatars img.selected {
+    border: 3px solid partial.$primary-color; 
+    box-shadow: 0 0 10px rgba(234, 0, 255, 0.5); /*glowing effect */
+}
 
-
+#bg img.selected {
+    border: 5px solid partial.$primary-color; 
+    box-shadow: 0 0 10px rgba(234, 0, 255, 0.5); /*glowing effect */
+}
 
 /*--------Login Button--------*/
 #loginBtn {

@@ -5,6 +5,13 @@
 const avatars = document.querySelectorAll('#avatars img');
 let avatarSelected;
 const selectAvatar = (e) => {
+
+    avatars.forEach (avatar => {
+        avatar.classList.remove("selected");
+    });
+
+    e.target.classList.add("selected");
+
     avatarSelected = e.target.src;
     console.log(avatarSelected);
 }
@@ -17,6 +24,13 @@ avatars.forEach(avatar => {
     const bgs = document.querySelectorAll ('#bg img');
     let bgSelected;
     const selectbg = (e) => {
+
+        bgs.forEach(bg => {
+            bg.classList.remove("selected");
+        });
+
+        e.target.classList.add("selected");
+
     bgSelected = e.target.src;
     document.body.style.backgroundImage = `url(${bgSelected})`
     console.log(bgSelected);
@@ -57,6 +71,7 @@ loginBtn.addEventListener("click", () => {
     // Check if avatar is selected
     if (!avatarSelected) {
         alert("Please select an avatar before continuing.");
+        
         return;
     }
 
