@@ -321,6 +321,9 @@ endchathistorybtn.addEventListener("click", () => {
         infografi.style.display = "none";
         loginPage.style.display = "block";
       
+         // Save progress
+       localStorage.setItem("currentSection", "loginPage");
+
     };
 })
 
