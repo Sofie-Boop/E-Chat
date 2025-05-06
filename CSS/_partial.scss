@@ -161,7 +161,6 @@ $border-radius2: 50px;
     color: white; 
     font-size: 20px;
     padding: 16px 80px;
-    margin-left: 35px;
     border: none;
     cursor: pointer;
     border-radius: 30px;
@@ -175,7 +174,6 @@ $border-radius2: 50px;
     color: black; 
     font-size: 20px;
     padding: 16px 80px;
-    margin-left: 35px;
     border: none;
     cursor: pointer;
     border-radius: 30px;
@@ -188,16 +186,23 @@ $border-radius2: 50px;
     background-color: $primary-color;
     color: white;
     position: relative; 
-    display: block;
     padding: 16px 60px;
     border: none;
     cursor: pointer;
     border-radius: 30px;
     text-align: center;
     margin-bottom: 30px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
+@mixin btnwrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
 /*-------------------------*/
 /*--------Desktop Knapper---------*/
 @mixin desktopstandardbtn {
@@ -207,7 +212,6 @@ $border-radius2: 50px;
     color: white; 
     font-size: 20px;
     padding: 28px 150px;
-    margin-left: 220px;
     border: none;
     cursor: pointer;
     border-radius: 50px;
@@ -221,7 +225,6 @@ $border-radius2: 50px;
     color: black; 
     font-size: 20px;
     padding: 28px 150px;
-    margin-left: 220px;
     border: none;
     cursor: pointer;
     border-radius: 50px;

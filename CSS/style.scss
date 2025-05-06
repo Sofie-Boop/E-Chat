@@ -51,7 +51,7 @@ a {
 /*-------------Mobil Styling--------------*/
 /*--------Login Page---------*/
 #loginPage {
-    
+    display: none;
 }
 
 .login-container {
@@ -178,10 +178,15 @@ input:user-invalid, textarea:user-invalid {
     background-color: partial.$fourth-color;
     color: white;
 }
+
+.loginbutton {
+    @include partial.btnwrapper;
+}
+
 /*-------------------------*/
 /*--------Chat & Chat pt2--------*/
 #chat {
-    display: none;
+    
 }
 
 #chatpt2 {
@@ -235,6 +240,10 @@ input:user-invalid, textarea:user-invalid {
 }
 
 /*--------Answer Buttons--------*/
+.answerbtns {
+    @include partial.btnwrapper;
+}
+
 #answer1btn, #answer2btn, #answer3btn, #answer4btn, #answer5btn, #answer6btn {
     @include partial.answerbtn;
     
@@ -269,8 +278,13 @@ input:user-invalid, textarea:user-invalid {
 }
 
 /*--------Ending 1 btn--------*/
+.warningdiv {
+    @include partial.btnwrapper;
+}
+
 #warningbtn {
     @include partial.badbtn;
+    @include partial.btnwrapper;
 }
 #warningbtn:hover {
     background-color: partial.$fourth-color;
@@ -302,6 +316,11 @@ input:user-invalid, textarea:user-invalid {
 }
 
 /*--------Ending 2 btn--------*/
+
+.errordiv {
+    @include partial.btnwrapper;
+}
+
 #errorbtn {
     @include partial.badbtn;
 }
@@ -321,7 +340,7 @@ input:user-invalid, textarea:user-invalid {
 .ending3-container {
      @include partial.standardbg;
     
-     min-height: 70svh;
+     min-height: 73svh;
     
      h1 {
          margin-top: -20px;
@@ -337,9 +356,12 @@ input:user-invalid, textarea:user-invalid {
  }
  
  /*--------Ending 3 btn--------*/
+ .logoff1div {
+    @include partial.btnwrapper;
+ }
+ 
  #logoff1btn {
      @include partial.standardbtn;
-     margin-left: 26px;
  }
 
 #logoff1btn:hover {
@@ -373,10 +395,12 @@ input:user-invalid, textarea:user-invalid {
 }
 
 /*--------Ending 4 btn--------*/
+.logoff2div {
+    @include partial.btnwrapper;
+}
+
 #logoff2btn {
     @include partial.standardbtn;
-    
-    margin-left: 26px;
 }
 
 #logoff2btn:hover {
@@ -487,6 +511,10 @@ input:user-invalid, textarea:user-invalid {
 }
 
 /*--------End Chat History btn--------*/
+.enddiv {
+    @include partial.btnwrapper;
+}
+
 #endchathistorybtn {
     @include partial.standardbtn;
     padding: 20px 30px;
@@ -641,7 +669,7 @@ input:user-invalid, textarea:user-invalid {
     /*--------Ending 3--------*/
     .ending3-container {
         @include partial.desktopstandardbg;
-        min-height: 75svh;
+        min-height: 84svh;
     }
 
     /*--------Ending 3 btn--------*/
@@ -653,7 +681,7 @@ input:user-invalid, textarea:user-invalid {
     /*--------Ending 4--------*/
     .ending4-container {
         @include partial.desktopstandardbg;
-        min-height: 78svh;
+        min-height: 80svh;
     }
 
     /*--------Ending 4 btn--------*/
