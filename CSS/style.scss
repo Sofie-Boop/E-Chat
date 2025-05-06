@@ -165,6 +165,10 @@ input:user-invalid, textarea:user-invalid {
     box-shadow: 0 0 10px rgba(234, 0, 255, 0.5); /*glowing effect */
 }
 
+.avatar-warning {
+    outline: 3px solid red;
+}
+
 /*--------Login Button--------*/
 #loginBtn {
   @include partial.standardbtn;

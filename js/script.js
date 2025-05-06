@@ -55,6 +55,7 @@ const loginPage = document.getElementById ("loginPage");
 const chat = document.getElementById ("chat");
 const unameInput = document.getElementById ("uname");
 let uName; 
+
 loginBtn.addEventListener("click", () => {
     uName = document.getElementById ("uname").value;
     console.log (uName); 
@@ -72,7 +73,17 @@ loginBtn.addEventListener("click", () => {
     if (!avatarSelected) {
         alert("Please select an avatar before continuing.");
         
+        // Add visual feedback
+        avatars.forEach(avatar => {
+            avatar.classList.add("avatar-warning");
+    });
+
         return;
+    } else {
+        // Remove the red outline if already selected
+        avatars.forEach(avatar => {
+            avatar.classList.remove("avatar-warning");
+        });
     }
 
     // Optional: clear red border if previously shown
