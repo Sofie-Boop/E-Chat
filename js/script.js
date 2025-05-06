@@ -39,10 +39,35 @@ const customiseUI = () => {
 const loginBtn = document.getElementById("loginBtn");
 const loginPage = document.getElementById ("loginPage");
 const chat = document.getElementById ("chat");
+const unameInput = document.getElementById ("uname");
 let uName; 
 loginBtn.addEventListener("click", () => {
     uName = document.getElementById ("uname").value;
     console.log (uName); 
+
+    uName = unameInput.value.trim();
+
+     // Check if username is entered
+     if (!uName) {
+        alert("Please enter a username.");
+        unameInput.style.border = "2px solid red"; // Optional: highlight input
+        return;
+    }
+
+    // Check if avatar is selected
+    if (!avatarSelected) {
+        alert("Please select an avatar before continuing.");
+        return;
+    }
+
+    // Optional: clear red border if previously shown
+    unameInput.style.border = "";
+
+    // Save to localStorage if needed
+    localStorage.setItem("username", uName);
+    localStorage.setItem("avatar", avatarSelected);
+
+     // Continue to chat screen
     if (loginPage.style.display !== "none") {
         loginPage.style.display = "none";
         chat.style.display = "block";
@@ -68,12 +93,18 @@ answer1btn.addEventListener("click", () => {
 /*--------Answerbtn2---------*/
 const answer2btn = document.getElementById ("answer2btn");
 const chatpt2 = document.getElementById ("chatpt2");
+const user2 = document.getElementById("user2");
+const userName2 = document.getElementById("userName2");
+
 
 answer2btn.addEventListener("click", () => {
 
     if (chat.style.display !== "none") {
         chat.style.display = "none";
         chatpt2.style.display = "block";
+
+        user2.src = avatarSelected;
+        userName2.textContent = uName;
       
     };
 })

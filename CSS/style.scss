@@ -51,7 +51,7 @@ a {
 /*-------------Mobil Styling--------------*/
 /*--------Login Page---------*/
 #loginPage {
-    display: none;
+    
 }
 
 .login-container {
@@ -173,7 +173,7 @@ input:user-invalid, textarea:user-invalid {
 }
 
 #chatpt2 {
-   
+    display: none;
 }
 /*--------Chat container & Messages--------*/
 .chat-container, .chat-container2 {
