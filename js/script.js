@@ -13,12 +13,43 @@ const selectAvatar = (e) => {
     e.target.classList.add("selected");
 
     avatarSelected = e.target.src;
+    localStorage.setItem("avatar", avatarSelected);
     console.log(avatarSelected);
 }
 
 avatars.forEach(avatar => {
     avatar.addEventListener('click', selectAvatar)})
 
+
+/*--------Username Input---------*/
+const unameInput = document.getElementById("uname");
+// When the username input changes, save the username to localStorage
+unameInput.addEventListener("input", () => {
+    const username = unameInput.value.trim();
+
+    // Save the username to localStorage (only if it's not empty)
+    if (username) {
+        localStorage.setItem("username", username);
+    }
+});
+
+/*--------Avatar ikon & Brugernavn---------*/
+const user = document.getElementById ("user");
+const userName = document.getElementById ("userName");
+const customiseUI = () => {
+    updateChatUI(avatarSelected, uName);
+}
+
+function updateChatUI(avatar, username) {
+    if (avatar) {
+        user.src = avatar;
+        user2.src = avatar;
+    }
+    if (username) {
+        userName.textContent = username;
+        userName2.textContent = username;
+    }
+}
 
 /*--------Baggrundsbillede Valg---------*/
     const bgs = document.querySelectorAll ('#bg img');
@@ -33,6 +64,10 @@ avatars.forEach(avatar => {
 
     bgSelected = e.target.src;
     document.body.style.backgroundImage = `url(${bgSelected})`
+    
+    // Save to localStorage
+    localStorage.setItem("background", bgSelected);
+    
     console.log(bgSelected);
 }
 
@@ -40,20 +75,10 @@ bgs.forEach (bg => {
     bg.addEventListener ('click', selectbg)})
 
 
-/*--------Avatar ikon & Brugernavn---------*/
-const user = document.getElementById ("user");
-const userName = document.getElementById ("userName");
-const customiseUI = () => {
-    user.src = avatarSelected;
-    userName.textContent = uName;
-}
-
-
 /*---------Login Page - Login btn---------*/
 const loginBtn = document.getElementById("loginBtn");
 const loginPage = document.getElementById ("loginPage");
 const chat = document.getElementById ("chat");
-const unameInput = document.getElementById ("uname");
 let uName; 
 
 loginBtn.addEventListener("click", () => {
@@ -99,6 +124,9 @@ loginBtn.addEventListener("click", () => {
         chat.style.display = "block";
       
         customiseUI()
+
+        // Save progress
+       localStorage.setItem("currentSection", "chat"); 
     };
 })
 
@@ -113,6 +141,8 @@ answer1btn.addEventListener("click", () => {
         chat.style.display = "none";
         ending1.style.display = "block";
       
+       // Save progress
+       localStorage.setItem("currentSection", "ending1"); 
     };
 })
 
@@ -129,8 +159,11 @@ answer2btn.addEventListener("click", () => {
         chat.style.display = "none";
         chatpt2.style.display = "block";
 
-        user2.src = avatarSelected;
-        userName2.textContent = uName;
+        user2.src = localStorage.getItem("avatar") || avatarSelected;
+        userName2.textContent = localStorage.getItem("username") || uName;
+
+        // Save progress
+       localStorage.setItem("currentSection", "chatpt2"); 
       
     };
 })
@@ -145,6 +178,8 @@ answer3btn.addEventListener("click", () => {
         chat.style.display = "none";
         ending3.style.display = "block";
       
+        // Save progress
+       localStorage.setItem("currentSection", "ending3"); 
     };
 })
 
@@ -159,6 +194,9 @@ answer4btn.addEventListener("click", () => {
         chatpt2.style.display = "none";
         ending2.style.display = "block";
       
+        // Save progress
+       localStorage.setItem("currentSection", "ending2"); 
+
     };
 })
 
@@ -171,6 +209,9 @@ answer5btn.addEventListener("click", () => {
         chatpt2.style.display = "none";
         ending1.style.display = "block";
       
+        // Save progress
+       localStorage.setItem("currentSection", "ending1"); 
+
     };
 })
 
@@ -183,6 +224,9 @@ answer6btn.addEventListener("click", () => {
         chatpt2.style.display = "none";
         ending4.style.display = "block";
       
+        // Save progress
+       localStorage.setItem("currentSection", "ending4"); 
+
     };
 })
 
@@ -197,6 +241,9 @@ warningbtn.addEventListener("click", () => {
         ending1.style.display = "none";
         infografi.style.display = "block";
       
+        // Save progress
+       localStorage.setItem("currentSection", "infografi"); 
+
     };
 })
 
@@ -209,6 +256,9 @@ errorbtn.addEventListener("click", () => {
     if (ending2.style.display !== "none") {
         ending2.style.display = "none";
         infografi.style.display = "block";
+
+        // Save progress
+       localStorage.setItem("currentSection", "infografi"); 
       
     };
 })
@@ -222,6 +272,9 @@ logoff1btn.addEventListener("click", () => {
     if (ending3.style.display !== "none") {
         ending3.style.display = "none";
         infografi.style.display = "block";
+
+        // Save progress
+       localStorage.setItem("currentSection", "infografi"); 
       
     };
 })
@@ -235,6 +288,9 @@ logoff2btn.addEventListener("click", () => {
     if (ending4.style.display !== "none") {
         ending4.style.display = "none";
         infografi.style.display = "block";
+
+        // Save progress
+       localStorage.setItem("currentSection", "infografi"); 
       
     };
 })
@@ -255,6 +311,7 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
 /*--------End Chat History --> Return To Start btn---------*/
 const endchathistorybtn = document.getElementById ("endchathistorybtn");
 
@@ -266,3 +323,61 @@ endchathistorybtn.addEventListener("click", () => {
       
     };
 })
+
+/*--------localStorage Reload---------*/
+window.addEventListener("DOMContentLoaded", () => {
+    const savedUsername = localStorage.getItem("username");
+    const savedAvatar = localStorage.getItem("avatar");
+
+    // Assign saved values to variables used in customiseUI
+    uName = savedUsername;
+    avatarSelected = savedAvatar;
+
+    if (loginPage.style.display !== "none") {
+        if (savedUsername) {
+            unameInput.value = savedUsername;
+        }
+
+        if (savedAvatar) {
+            avatars.forEach(avatar => {
+                if (avatar.src === savedAvatar) {
+                    avatar.classList.add("selected");
+                } else {
+                    avatar.classList.remove("selected");
+                }
+            });
+        }
+    }
+
+    const savedBackground = localStorage.getItem("background");
+    if (savedBackground) {
+        bgSelected = savedBackground;
+        document.body.style.backgroundImage = `url(${bgSelected})`;
+
+        bgs.forEach(bg => {
+            if (bg.src === bgSelected) {
+                bg.classList.add("selected");
+            }
+        });
+    }
+
+    const currentSection = localStorage.getItem("currentSection");
+    if (currentSection) {
+        loginPage.style.display = "none";
+
+        [chat, chatpt2, ending1, ending2, ending3, ending4, infografi].forEach(section => {
+            section.style.display = "none";
+        });
+
+        const sectionToShow = document.getElementById(currentSection);
+        if (sectionToShow) {
+            sectionToShow.style.display = "block";
+        }
+
+        customiseUI();  // Will now use restored values
+    }
+
+    if (currentSection === "chatpt2") {
+        updateChatUI(avatarSelected, uName);
+    }
+});
