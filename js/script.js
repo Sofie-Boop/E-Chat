@@ -83,7 +83,7 @@ const chat = document.getElementById ("chat");
 let uName; 
 
 loginBtn.addEventListener("click", () => {
-    path.push("login")
+    path.push("login") // Save choice in a path
     uName = document.getElementById ("uname").value;
     console.log (uName); 
 
@@ -140,7 +140,7 @@ const answer1btn = document.getElementById ("answer1btn");
 const ending1 = document.getElementById ("ending1");
 
 answer1btn.addEventListener("click", () => {
-path.push("answer1btn")
+path.push("answer1btn") // Save choice in a path
     if (chat.style.display !== "none") {
         chat.style.display = "none";
         ending1.style.display = "block";
@@ -160,7 +160,7 @@ const userName2 = document.getElementById("userName2");
 
 
 answer2btn.addEventListener("click", () => {
-path.push("answer2btn")
+path.push("answer2btn") // Save choice in a path
     if (chat.style.display !== "none") {
         chat.style.display = "none";
         chatpt2.style.display = "block";
@@ -181,7 +181,7 @@ const answer3btn = document.getElementById ("answer3btn");
 const ending3 = document.getElementById ("ending3");
 
 answer3btn.addEventListener("click", () => {
-path.push("answer3btn")
+path.push("answer3btn") // Save choice in a path
     if (chat.style.display !== "none") {
         chat.style.display = "none";
         ending3.style.display = "block";
@@ -199,7 +199,7 @@ const answer4btn = document.getElementById ("answer4btn");
 const ending2 = document.getElementById ("ending2")
 
 answer4btn.addEventListener("click", () => {
-path.push("answer4btn")
+path.push("answer4btn") // Save choice in a path
     if (chatpt2.style.display !== "none") {
         chatpt2.style.display = "none";
         ending2.style.display = "block";
@@ -216,7 +216,7 @@ path.push("answer4btn")
 const answer5btn = document.getElementById ("answer5btn");
 
 answer5btn.addEventListener("click", () => {
-path.push("answer5btn")
+path.push("answer5btn") // Save choice in a path
     if (chatpt2.style.display !== "none") {
         chatpt2.style.display = "none";
         ending1.style.display = "block";
@@ -233,7 +233,7 @@ path.push("answer5btn")
 const answer6btn = document.getElementById ("answer6btn");
 
 answer6btn.addEventListener("click", () => {
-path.push("answer6btn")
+path.push("answer6btn") // Save choice in a path
     if (chatpt2.style.display !== "none") {
         chatpt2.style.display = "none";
         ending4.style.display = "block";
@@ -252,7 +252,7 @@ const warningbtn = document.getElementById ("warningbtn");
 const infografi = document.getElementById ("infografi");
 
 warningbtn.addEventListener("click", () => {
-path.push("warningbtn")
+path.push("warningbtn") // Save choice in a path
     if (ending1.style.display !== "none") {
         ending1.style.display = "none";
         infografi.style.display = "block";
@@ -270,7 +270,7 @@ path.push("warningbtn")
 const errorbtn = document.getElementById ("errorbtn");
 
 errorbtn.addEventListener("click", () => {
-path.push("errorbtn")
+path.push("errorbtn") // Save choice in a path
     if (ending2.style.display !== "none") {
         ending2.style.display = "none";
         infografi.style.display = "block";
@@ -288,7 +288,7 @@ path.push("errorbtn")
 const logoff1btn = document.getElementById ("logoff1btn");
 
 logoff1btn.addEventListener("click", () => {
-path.push("logoff1btn")
+path.push("logoff1btn") // Save choice in a path
     if (ending3.style.display !== "none") {
         ending3.style.display = "none";
         infografi.style.display = "block";
@@ -306,7 +306,7 @@ path.push("logoff1btn")
 const logoff2btn = document.getElementById ("logoff2btn");
 
 logoff2btn.addEventListener("click", () => {
-path.push("logoff2btn")
+path.push("logoff2btn") // Save choice in a path
     if (ending4.style.display !== "none") {
         ending4.style.display = "none";
         infografi.style.display = "block";
