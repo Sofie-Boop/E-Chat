@@ -1046,6 +1046,22 @@ input:user-invalid, textarea:user-invalid {
     padding: 20px;
     margin-bottom: 35px;
   }
+  .info1-container {
+    display: flex;
+  }
+  .infobox1 {
+    margin-right: 15px;
+  }
+  .info4-container {
+    display: flex;
+    margin-top: 15px;
+  }
+  .infobox3 {
+    margin-right: 7.5px;
+  }
+  .infobox4 {
+    margin-left: 7.5px;
+  }
   /*--------End Chat History btn--------*/
   #endchathistorybtn {
     font-family: "Coiny", system-ui;
