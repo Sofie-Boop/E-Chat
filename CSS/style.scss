@@ -187,7 +187,7 @@ input:user-invalid, textarea:user-invalid {
 /*-------------------------*/
 /*--------Chat & Chat pt2--------*/
 #chat {
-    
+    display: none;
 }
 
 #chatpt2 {
@@ -423,7 +423,7 @@ input:user-invalid, textarea:user-invalid {
 /*-------------------------*/
 /*--------Infografi--------*/
 #infografi {
-    display: none;
+    
 }
 
 .infografi-container {
@@ -447,9 +447,6 @@ input:user-invalid, textarea:user-invalid {
 }
 
 /*--------info-container 1 & infbox 1 & 2--------*/
-.info1-container {
-    
-}
 
 .infobox1 {
     @include partial.infoboxpurple;
@@ -480,9 +477,6 @@ input:user-invalid, textarea:user-invalid {
 }
 
 /*--------info-container 4 & infbox 3 & 4--------*/
-.info4-container {
-    
-}
 
 .infobox3 {
     @include partial.infoboxpurple;

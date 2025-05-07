@@ -238,6 +238,10 @@ input:user-invalid, textarea:user-invalid {
 
 /*-------------------------*/
 /*--------Chat & Chat pt2--------*/
+#chat {
+  display: none;
+}
+
 #chatpt2 {
   display: none;
 }
@@ -578,10 +582,6 @@ input:user-invalid, textarea:user-invalid {
 
 /*-------------------------*/
 /*--------Infografi--------*/
-#infografi {
-  display: none;
-}
-
 .infografi-container {
   border-radius: 20px 20px 20px 20px;
   margin: auto;
