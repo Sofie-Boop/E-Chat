@@ -754,7 +754,7 @@ input:user-invalid, textarea:user-invalid {
   cursor: pointer;
   border-radius: 30px;
   text-align: center;
-  padding: 20px 30px;
+  padding: 20px 50px;
   margin-top: 30px;
 }
 
@@ -1046,11 +1046,23 @@ input:user-invalid, textarea:user-invalid {
     padding: 20px;
     margin-bottom: 35px;
   }
+  .intro-container {
+    gap: 165px;
+  }
+  .intro-container img {
+    margin-left: 15px;
+  }
   .info1-container {
     display: flex;
   }
   .infobox1 {
     margin-right: 15px;
+  }
+  .infoheading1-container {
+    gap: 80px;
+  }
+  .infoheading1-container img {
+    margin-left: 15px;
   }
   .info4-container {
     display: flex;

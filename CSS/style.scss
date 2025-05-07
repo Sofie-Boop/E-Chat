@@ -522,7 +522,7 @@ input:user-invalid, textarea:user-invalid {
 
 #endchathistorybtn {
     @include partial.standardbtn;
-    padding: 20px 30px;
+    padding: 20px 50px;
     margin-top: 30px;
 }
 
@@ -700,12 +700,28 @@ input:user-invalid, textarea:user-invalid {
         @include partial.desktopinfografibg;
     }
 
+    .intro-container {
+        gap: 165px;
+
+        img {
+            margin-left: 15px;
+        }
+    }
+
     .info1-container {
         display: flex;
     }
 
     .infobox1 {
         margin-right: 15px;
+    }
+
+    .infoheading1-container {
+        gap: 80px;
+
+        img {
+            margin-left: 15px;
+        }
     }
 
     .info4-container {
