@@ -342,6 +342,35 @@ const endchathistorybtn = document.getElementById ("endchathistorybtn");
 endchathistorybtn.addEventListener("click", () => {
 
     if (infografi.style.display !== "none") {
+
+         // 1. Clear localStorage
+        localStorage.clear();
+
+        // 2. Reset visible UI
+        unameInput.value = "";               // Clear username input
+        user.src = "";                       // Clear avatar image
+        user2.src = "";                      // Clear avatar image in chat pt 2
+        userName.textContent = "";           // Clear username text
+        userName2.textContent = "";          // Clear username in chat pt 2
+        document.body.style.backgroundImage = ""; // Replace with actual default image path
+
+        // Remove avatar selection
+        avatars.forEach(avatar => {
+            avatar.classList.remove("selected");
+        });
+
+        // Remove background selection
+        bgs.forEach(bg => {
+            bg.classList.remove("selected");
+        });
+
+        // Clear memory variables
+        avatarSelected = null;
+        uName = "";
+        bgSelected = null;
+        path = [];
+
+        // 3. Reset display
         infografi.style.display = "none";
         loginPage.style.display = "block";
       

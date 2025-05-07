@@ -74,10 +74,6 @@ a {
 /*----------------------------------------*/
 /*-------------Mobil Styling--------------*/
 /*--------Login Page---------*/
-#loginPage {
-  display: none;
-}
-
 .login-container {
   background: linear-gradient(#AA64D8, #F7A3DF, #6EBDFF);
   color: white;
@@ -582,6 +578,10 @@ input:user-invalid, textarea:user-invalid {
 
 /*-------------------------*/
 /*--------Infografi--------*/
+#infografi {
+  display: none;
+}
+
 .infografi-container {
   border-radius: 20px 20px 20px 20px;
   margin: auto;
