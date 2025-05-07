@@ -160,7 +160,7 @@ const userName2 = document.getElementById("userName2");
 
 
 answer2btn.addEventListener("click", () => {
-
+path.push("answer2btn")
     if (chat.style.display !== "none") {
         chat.style.display = "none";
         chatpt2.style.display = "block";
@@ -181,7 +181,7 @@ const answer3btn = document.getElementById ("answer3btn");
 const ending3 = document.getElementById ("ending3");
 
 answer3btn.addEventListener("click", () => {
-
+path.push("answer3btn")
     if (chat.style.display !== "none") {
         chat.style.display = "none";
         ending3.style.display = "block";
@@ -199,7 +199,7 @@ const answer4btn = document.getElementById ("answer4btn");
 const ending2 = document.getElementById ("ending2")
 
 answer4btn.addEventListener("click", () => {
-
+path.push("answer4btn")
     if (chatpt2.style.display !== "none") {
         chatpt2.style.display = "none";
         ending2.style.display = "block";
@@ -216,7 +216,7 @@ answer4btn.addEventListener("click", () => {
 const answer5btn = document.getElementById ("answer5btn");
 
 answer5btn.addEventListener("click", () => {
-
+path.push("answer5btn")
     if (chatpt2.style.display !== "none") {
         chatpt2.style.display = "none";
         ending1.style.display = "block";
@@ -233,7 +233,7 @@ answer5btn.addEventListener("click", () => {
 const answer6btn = document.getElementById ("answer6btn");
 
 answer6btn.addEventListener("click", () => {
-
+path.push("answer6btn")
     if (chatpt2.style.display !== "none") {
         chatpt2.style.display = "none";
         ending4.style.display = "block";
@@ -252,7 +252,7 @@ const warningbtn = document.getElementById ("warningbtn");
 const infografi = document.getElementById ("infografi");
 
 warningbtn.addEventListener("click", () => {
-
+path.push("warningbtn")
     if (ending1.style.display !== "none") {
         ending1.style.display = "none";
         infografi.style.display = "block";
@@ -270,7 +270,7 @@ warningbtn.addEventListener("click", () => {
 const errorbtn = document.getElementById ("errorbtn");
 
 errorbtn.addEventListener("click", () => {
-
+path.push("errorbtn")
     if (ending2.style.display !== "none") {
         ending2.style.display = "none";
         infografi.style.display = "block";
@@ -288,7 +288,7 @@ errorbtn.addEventListener("click", () => {
 const logoff1btn = document.getElementById ("logoff1btn");
 
 logoff1btn.addEventListener("click", () => {
-
+path.push("logoff1btn")
     if (ending3.style.display !== "none") {
         ending3.style.display = "none";
         infografi.style.display = "block";
@@ -306,7 +306,7 @@ logoff1btn.addEventListener("click", () => {
 const logoff2btn = document.getElementById ("logoff2btn");
 
 logoff2btn.addEventListener("click", () => {
-
+path.push("logoff2btn")
     if (ending4.style.display !== "none") {
         ending4.style.display = "none";
         infografi.style.display = "block";
