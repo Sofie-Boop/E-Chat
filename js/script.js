@@ -4,6 +4,7 @@
 /*--------Avatar Valg---------*/
 const avatars = document.querySelectorAll('#avatars img');
 let avatarSelected;
+let path = [];
 const selectAvatar = (e) => {
 
     avatars.forEach (avatar => {
@@ -82,6 +83,7 @@ const chat = document.getElementById ("chat");
 let uName; 
 
 loginBtn.addEventListener("click", () => {
+    path.push("login")
     uName = document.getElementById ("uname").value;
     console.log (uName); 
 
@@ -125,8 +127,10 @@ loginBtn.addEventListener("click", () => {
       
         customiseUI()
 
-        // Save progress
-       localStorage.setItem("currentSection", "chat"); 
+        // Save progress current page on refresh
+       localStorage.setItem("currentSection", "chat");
+       // Save progress in a path
+       localStorage.setItem("path", path); 
     };
 })
 
@@ -136,13 +140,15 @@ const answer1btn = document.getElementById ("answer1btn");
 const ending1 = document.getElementById ("ending1");
 
 answer1btn.addEventListener("click", () => {
-
+path.push("answer1btn")
     if (chat.style.display !== "none") {
         chat.style.display = "none";
         ending1.style.display = "block";
       
-       // Save progress
+       // Save progress current page on refresh
        localStorage.setItem("currentSection", "ending1"); 
+       // Save progress in a path
+       localStorage.setItem("path", path);
     };
 })
 
@@ -162,8 +168,10 @@ answer2btn.addEventListener("click", () => {
         user2.src = localStorage.getItem("avatar") || avatarSelected;
         userName2.textContent = localStorage.getItem("username") || uName;
 
-        // Save progress
+        // Save progress current page on refresh
        localStorage.setItem("currentSection", "chatpt2"); 
+       // Save progress in a path
+       localStorage.setItem("path", path);
       
     };
 })
@@ -178,8 +186,10 @@ answer3btn.addEventListener("click", () => {
         chat.style.display = "none";
         ending3.style.display = "block";
       
-        // Save progress
+        // Save progress current page on refresh
        localStorage.setItem("currentSection", "ending3"); 
+       // Save progress in a path
+       localStorage.setItem("path", path);
     };
 })
 
@@ -194,8 +204,10 @@ answer4btn.addEventListener("click", () => {
         chatpt2.style.display = "none";
         ending2.style.display = "block";
       
-        // Save progress
+        // Save progress current page with refresh
        localStorage.setItem("currentSection", "ending2"); 
+       // Save progress in a path
+       localStorage.setItem("path", path);
 
     };
 })
@@ -209,8 +221,10 @@ answer5btn.addEventListener("click", () => {
         chatpt2.style.display = "none";
         ending1.style.display = "block";
       
-        // Save progress
+        // Save progress current page on refreash
        localStorage.setItem("currentSection", "ending1"); 
+       // Save progress in a path
+       localStorage.setItem("path", path);
 
     };
 })
@@ -224,8 +238,10 @@ answer6btn.addEventListener("click", () => {
         chatpt2.style.display = "none";
         ending4.style.display = "block";
       
-        // Save progress
+        // Save progress current page on refresh
        localStorage.setItem("currentSection", "ending4"); 
+       // Save progress in a path
+       localStorage.setItem("path", path);
 
     };
 })
@@ -241,8 +257,10 @@ warningbtn.addEventListener("click", () => {
         ending1.style.display = "none";
         infografi.style.display = "block";
       
-        // Save progress
-       localStorage.setItem("currentSection", "infografi"); 
+        // Save progress current page on refresh
+       localStorage.setItem("currentSection", "infografi");
+       // Save progress in a path
+       localStorage.setItem("path", path); 
 
     };
 })
@@ -257,8 +275,10 @@ errorbtn.addEventListener("click", () => {
         ending2.style.display = "none";
         infografi.style.display = "block";
 
-        // Save progress
+        // Save progress current page with refresh
        localStorage.setItem("currentSection", "infografi"); 
+       // Save progress in a path
+       localStorage.setItem("path", path);
       
     };
 })
@@ -273,8 +293,10 @@ logoff1btn.addEventListener("click", () => {
         ending3.style.display = "none";
         infografi.style.display = "block";
 
-        // Save progress
-       localStorage.setItem("currentSection", "infografi"); 
+        // Save progress current page on refresh
+       localStorage.setItem("currentSection", "infografi");
+       // Save progress in a path
+       localStorage.setItem("path", path); 
       
     };
 })
@@ -289,8 +311,10 @@ logoff2btn.addEventListener("click", () => {
         ending4.style.display = "none";
         infografi.style.display = "block";
 
-        // Save progress
-       localStorage.setItem("currentSection", "infografi"); 
+        // Save progress current page on refresh
+       localStorage.setItem("currentSection", "infografi");
+       // Save progress in a path
+       localStorage.setItem("path", path);
       
     };
 })
