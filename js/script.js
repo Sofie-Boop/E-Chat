@@ -4,7 +4,8 @@
 /*--------Avatar Valg---------*/
 const avatars = document.querySelectorAll('#avatars img');
 let avatarSelected;
-let path = [];
+let pathString = localStorage.getItem("path"); // Saves path on refresh
+let path = pathString ? pathString.split(",") : []; // Makes user choices to a string
 const selectAvatar = (e) => {
 
     avatars.forEach (avatar => {
@@ -83,7 +84,7 @@ const chat = document.getElementById ("chat");
 let uName; 
 
 loginBtn.addEventListener("click", () => {
-    path.push("login") // Save choice in a path
+    path.push("login"); // Save choice in a path
     uName = document.getElementById ("uname").value;
     console.log (uName); 
 
