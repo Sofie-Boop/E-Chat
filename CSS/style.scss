@@ -342,7 +342,7 @@ input:user-invalid, textarea:user-invalid {
 
 #ending3 {
     display: none;
- }
+}
  
 .ending3-container {
      @include partial.standardbg;
@@ -356,20 +356,20 @@ input:user-invalid, textarea:user-invalid {
      h2 {
          margin-top: -30px;
      }
- }
+}
  
  .advice3 {
      text-align: center;
- }
+}
  
  /*--------Ending 3 btn--------*/
  .logoff1div {
     @include partial.btnwrapper;
- }
+}
  
  #logoff1btn {
      @include partial.standardbtn;
- }
+}
 
 #logoff1btn:hover {
     background-color: partial.$fourth-color;
@@ -434,16 +434,11 @@ input:user-invalid, textarea:user-invalid {
     max-width: 50%;
 }
 
-.infographic1, .infographic2, .infographic3, .infographic4, .infographic5, .infographic6 {
-    max-width: 60%;
-}
-
 .intro-container {
     @include partial.introcontainer;
 }
 
-/*--------info-container 1 & infbox 1 & 2--------*/
-
+/*--------info1-container & infobox 1 & 2--------*/
 .infobox1 {
     @include partial.infoboxpurple;
 }
@@ -454,12 +449,24 @@ input:user-invalid, textarea:user-invalid {
     padding-bottom: 15px;
 }
 
-/*--------Info-container 2 & row 5-8--------*/
+.infographic1 {
+    max-width: 60%;
+}
+
+/*--------Info2-container & row 5-8--------*/
 .info2-container {
     @include partial.infoboxpurple;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 5px;
     margin-top: 15px;
+}
+
+.row5, .row6, .row7, .row8 {
+    margin-bottom: 40px;
+    
+    img {
+        max-width: 60%;
+    }
 }
 
 /*--------Info Heading 1 Container--------*/
@@ -467,12 +474,12 @@ input:user-invalid, textarea:user-invalid {
     @include partial.introcontainer;
 }
 
-/*--------Info-container 3 & row 9-11--------*/
+/*--------Info3-container & row 9-11--------*/
 .info3-container {
     @include partial.infoboxwhite;
 }
 
-/*--------info-container 4 & infbox 3 & 4--------*/
+/*--------info4-container & infobox 3 & 4--------*/
 
 .infobox3 {
     @include partial.infoboxpurple;
@@ -704,6 +711,7 @@ input:user-invalid, textarea:user-invalid {
         }
     }
 
+    /*--------info-container 1 & infobox 1 & 2--------*/
     .info1-container {
         display: flex;
     }
@@ -712,6 +720,25 @@ input:user-invalid, textarea:user-invalid {
         margin-right: 15px;
     }
 
+    .infobox2 {
+        img {
+            max-width: 90%;
+        }
+    }
+
+    /*--------Info2-container & row 5-8--------*/
+    .info2-container {
+        @include partial.infoboxpurple;
+        padding-top: 50px;
+        padding-bottom: 5px;
+        margin-top: 15px;
+    }
+
+    .row5, .row6, .row7, .row8 {
+        margin-bottom: 70px;
+    }
+
+    /*--------Infoheading1-container--------*/
     .infoheading1-container {
         gap: 80px;
 
@@ -720,6 +747,7 @@ input:user-invalid, textarea:user-invalid {
         }
     }
 
+    /*--------info4-container & infobox 3 & 4--------*/
     .info4-container {
         display: flex;
         margin-top: 15px;

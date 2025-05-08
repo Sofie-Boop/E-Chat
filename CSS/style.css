@@ -601,10 +601,6 @@ input:user-invalid, textarea:user-invalid {
   max-width: 50%;
 }
 
-.infographic1, .infographic2, .infographic3, .infographic4, .infographic5, .infographic6 {
-  max-width: 60%;
-}
-
 .intro-container {
   background: linear-gradient(to right, #AA64D8, #F7A3DF, #6EBDFF);
   border-radius: 30px;
@@ -613,7 +609,7 @@ input:user-invalid, textarea:user-invalid {
   margin-bottom: 15px;
 }
 
-/*--------info-container 1 & infbox 1 & 2--------*/
+/*--------info1-container & infobox 1 & 2--------*/
 .infobox1 {
   background: #BCB0D4;
   color: #FFFFFF;
@@ -633,15 +629,26 @@ input:user-invalid, textarea:user-invalid {
   color: black;
 }
 
-/*--------Info-container 2 & row 5-8--------*/
+.infographic1 {
+  max-width: 60%;
+}
+
+/*--------Info2-container & row 5-8--------*/
 .info2-container {
   background: #BCB0D4;
   color: #FFFFFF;
   border-radius: 30px;
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 5px;
   margin-top: 15px;
+}
+
+.row5, .row6, .row7, .row8 {
+  margin-bottom: 40px;
+}
+.row5 img, .row6 img, .row7 img, .row8 img {
+  max-width: 60%;
 }
 
 /*--------Info Heading 1 Container--------*/
@@ -653,7 +660,7 @@ input:user-invalid, textarea:user-invalid {
   margin-bottom: 15px;
 }
 
-/*--------Info-container 3 & row 9-11--------*/
+/*--------Info3-container & row 9-11--------*/
 .info3-container {
   background: #FFFFFF;
   color: black;
@@ -664,7 +671,7 @@ input:user-invalid, textarea:user-invalid {
   color: black;
 }
 
-/*--------info-container 4 & infbox 3 & 4--------*/
+/*--------info4-container & infobox 3 & 4--------*/
 .infobox3 {
   background: #BCB0D4;
   color: #FFFFFF;
@@ -1052,18 +1059,37 @@ input:user-invalid, textarea:user-invalid {
   .intro-container img {
     margin-left: 15px;
   }
+  /*--------info-container 1 & infobox 1 & 2--------*/
   .info1-container {
     display: flex;
   }
   .infobox1 {
     margin-right: 15px;
   }
+  .infobox2 img {
+    max-width: 90%;
+  }
+  /*--------Info2-container & row 5-8--------*/
+  .info2-container {
+    background: #BCB0D4;
+    color: #FFFFFF;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+  }
+  .row5, .row6, .row7, .row8 {
+    margin-bottom: 70px;
+  }
+  /*--------Infoheading1-container--------*/
   .infoheading1-container {
     gap: 80px;
   }
   .infoheading1-container img {
     margin-left: 15px;
   }
+  /*--------info4-container & infobox 3 & 4--------*/
   .info4-container {
     display: flex;
     margin-top: 15px;
